@@ -1,22 +1,148 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+	<title></title>
 	<meta charset="utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<link href="site.css" rel="stylesheet" />
 
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-			crossorigin="anonymous"></script>
+	<link href="site.css" rel="stylesheet" />
 	<script src="scripts.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik:400,700" rel="stylesheet">
 </head>
 <body>
-	<h1>Blank Website</h1>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Brand</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Gallery</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">SiegeNut</a></li>
+							<li><a href="#">Wardrobe</a></li>
+							<li><a href="#">Tuscany Villa</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div class="container-fluid">
+		<div class="row header-row">
+			<div class="col-lg-6 col-lg-offset-3">
+				<div class="spaced-text">
+					<p>Joseph Coppola</p>
+					<p>Software Developer</p>
+				</div>
+				<a class="btn btn-default btn-section-nav" href="#" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+			</div>
+
+		</div>
+		<div class="row personal-row">
+			<div class="col-lg-4 headshot">
+				<img src="images/JosephCoppolaHeadshot_cr.jpg" class="img-circle img-responsive" />
+			</div>
+			<div class="col-lg-7 text">
+				<p><h1>About Me</h1></p>
+				<p>
+					Suspendisse potenti. Suspendisse diam nulla, faucibus consectetur mi ac, consectetur dignissim leo.
+					Vestibulum magna lacus, sagittis vitae purus sed, porttitor rhoncus ligula. Aliquam elit orci, ultricies
+					dignissim magna at, pulvinar consectetur sem. Donec pharetra nisi eu rutrum tempor. Sed convallis lacus et
+					facilisis porttitor. Aliquam egestas porta consectetur. Cras ultricies lectus in orci venenatis iaculis.
+					Sed mollis lacus interdum lorem sagittis, id aliquet mi sagittis. Fusce pretium vel quam ac congue. Nullam
+					bibendum, magna nec dictum varius, libero ex cursus nunc, vitae porttitor nulla ligula id nibh. Nullam malesuada,
+					tortor id cursus viverra, ante orci consectetur lacus, mattis laoreet tellus leo id erat. Aenean dui lacus,
+					ullamcorper vel ornare eu, malesuada vitae mauris.
+				</p>
+			</div>
+		</div>
+		<div class="row button-row">
+			<a class="btn btn-default btn-section-nav" href="#" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+		</div>
+		<div class="row project-row">
+			<ul id="og-grid" class="og-grid">
+				<li>
+					<a href="UNFINISHED" data-largesrc="images/siegenut-full.png" data-title="SiegeNut" data-description="Nam non tristique velit. Nam quis luctus felis. In maximus iaculis lorem, nec posuere ligula sodales quis. ">
+						<img src="images/thumbs/siegenut.png" alt="siegenut" />
+					</a>
+					<div class="og-expander">
+						<div class="og-expander-inner">
+							<span class="og-close"></span>
+							<div class="og-fullimg">
+								<div class="og-loading"></div>
+								<img src="images/siegenut-full.png">
+							</div>
+							<div class="og-details">
+								<h3>SiegeNut</h3>
+								<p>Vivamus at sem sem. Nunc convallis dolor sed dui rutrum feugiat vitae ac magna. Curabitur eu augue felis. Nam vel nibh accumsan, dapibus magna quis, gravida mi. </p>
+								<a href="UNFINISHED">Visit website</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="UNFINISHED" data-largesrc="images/wardrobe-full.png" data-title="Wardrobe" data-description="Pellentesque vitae pulvinar est. Sed eget laoreet ligula. ">
+						<img src="images/thumbs/wardrobe.png" alt="wardrobe" />
+					</a>
+					<div class="og-expander">
+						<div class="og-expander-inner">
+							<span class="og-close"></span>
+							<div class="og-fullimg">
+								<div class="og-loading"></div>
+								<img src="images/wardrobe-full.png">
+							</div>
+							<div class="og-details">
+								<h3>Wardrobe</h3>
+								<p>Vivamus at sem sem. Nunc convallis dolor sed dui rutrum feugiat vitae ac magna. Curabitur eu augue felis. Nam vel nibh accumsan, dapibus magna quis, gravida mi. </p>
+								<a href="UNFINISHED">Visit website</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="UNFINISHED" data-largesrc="images/tuscany-full.png" data-title="Tuscany Villa" data-description="Sed tristique convallis nunc vel iaculis. Nam sollicitudin eros et urna auctor, quis ultrices nisl porta. ">
+						<img src="images/thumbs/tuscanyvilla.png" alt="tuscanyvilla" />
+					</a>
+					<div class="og-expander">
+						<div class="og-expander-inner">
+							<span class="og-close"></span>
+							<div class="og-fullimg">
+								<div class="og-loading"></div>
+								<img src="images/tuscany-full.png">
+							</div>
+							<div class="og-details">
+								<h3>Tuscany Villa</h3>
+								<p>Vivamus at sem sem. Nunc convallis dolor sed dui rutrum feugiat vitae ac magna. Curabitur eu augue felis. Nam vel nibh accumsan, dapibus magna quis, gravida mi. </p>
+								<a href="UNFINISHED">Visit website</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- ... -->
+			</ul>
+		</div>
+	</div> <!--container-fluid div-->
 </body>
 </html>

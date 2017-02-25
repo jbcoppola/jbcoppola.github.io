@@ -1,2 +1,82 @@
 ﻿body {
+	font-family: 'Rubik', sans-serif;
+}
+body,p,h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+.navbar {
+	margin: 0px;
+	background-image: none;
+	background-color: rgb(20,20,20);
+	border: none;
+}
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header-row {
+	text-align: center;
+	background-color: rgb(20,20,20);
+	color: gainsboro;
+}
+.header-row:before {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url('images/header-row background.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	opacity: 0.1;
+}
+.header-row .spaced-text {
+	padding: 200px 0px;
+	letter-spacing: 7px;
+	font-size: 30px;
+}
+.btn-section-nav {
+	border-radius: 50%;
+	background-image: none;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid gainsboro;
+	margin: -50px 15px 15px 15px;
+	z-index: 1;
+}
+.personal-row {
+	background-color: white;
+	position: relative;
+}
+.personal-row .headshot {
+	background-color: rgb(231,231,231);
+	padding: 75px 50px;
+}
+.personal-row .headshot img {
+	display: block;
+	max-height: 300px;
+	max-width: 300px;
+	border: 6px solid rgb(210,210,210);
+	margin-left: auto;
+	margin-right: auto;
+}
+.personal-row .text {
+	padding: 30px;
+	margin: 50px 30px;
+	font-size: 15px;
+}
+.personal-row .text h1 {
+	text-align: center;
+	letter-spacing: 5px;
+	font-size: 30px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	color: rgb(160,160,160);
+}
+.button-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.button-row .btn {
+	color: gray;
 }
