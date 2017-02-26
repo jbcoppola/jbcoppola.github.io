@@ -32,18 +32,11 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="top-navbar-menu">
 				<ul class="nav navbar-nav navbar-center">
-					<li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Gallery</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">SiegeNut</a></li>
-							<li><a href="#">Wardrobe</a></li>
-							<li><a href="#">Tuscany Villa</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Skills</a></li>
+					<li><a href="#header">Top</a></li>
+					<li class="active"><a href="#about">About <span class="sr-only">(current)</span></a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#contacts">Contact</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
@@ -51,19 +44,19 @@
 	<!--end of navbar-->
 	<div class="container-fluid">
 		<!--Top header - the banner-->
-		<div class="row header-row">
+		<div class="row header-row" id="header">
 			<div class="col-md-6 col-md-offset-3">
 				<div class="spaced-text">
 					<p>Joseph Coppola</p>
 					<p>Software Developer</p>
 				</div>
-				<a class="btn btn-default btn-section-nav" href="#" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+				<a class="btn btn-default btn-section-nav" href="#personal" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
 			</div>
 
 		</div>
 		<!--end of top header-->
 		<!--Biography section-->
-		<div class="row personal-row">
+		<div class="row personal-row" id="personal">
 			<div class="col-md-4 headshot">
 				<img src="images/JosephCoppolaHeadshot_cr.jpg" class="img-circle img-responsive" />
 			</div>
@@ -82,11 +75,11 @@
 			</div>
 		</div>
 		<div class="row button-row">
-			<a class="btn btn-default btn-section-nav" href="#" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+			<a class="btn btn-default btn-section-nav" href="#projects" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
 		</div>
 		<!--end of biography section-->
 		<!--Project showcase section-->
-		<div class="row project-row">
+		<div class="row project-row" id="projects">
 			<p><h1>Projects</h1></p>
 			<div class="col-md-3 project-buttons">
 				<div class="row">
@@ -106,10 +99,10 @@
 			</div>
 		</div>
 		<div class="row button-row">
-			<a class="btn btn-default btn-section-nav" href="#" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+			<a class="btn btn-default btn-section-nav" href="#skills" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
 		</div>
 		<!--Skills section-->
-		<div class="row skills-row">
+		<div class="row skills-row" id="skills">
 			<p><h1>Skills</h1></p>
 			<div class="col-md-2 col-md-offset-2">
 				<div class="skills">
@@ -152,10 +145,24 @@
 			</div>
 		</div>
 		<div class="row button-row">
-			<a class="btn btn-default btn-section-nav" href="#" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+			<a class="btn btn-default btn-section-nav" href="#contacts" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
 		</div>
 		<!--end of skills section-->
-
+		<!--contact section-->
+		<div class="row contact-row" id="contacts">
+			<p><h1>Contact</h1></p>
+			<div class="col-md-6 spaced-text">
+				<a class="btn btn-default" href="https://www.linkedin.com/in/joseph-coppola/" role="button">LinkedIn</a>
+			</div>
+			<div class="col-md-6 spaced-text">
+				<a class="btn btn-default" href="https://github.com/jbcoppola" role="button">Github</a>
+			</div>
+			<button class="btn btn-default email spaced-text" type="button">Email</button>
+		</div>
+		<div class="row button-row">
+			<a class="btn btn-default btn-section-nav" href="#header" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+		</div>
+		<!--end of content section-->
 	</div> <!--main container-fluid div-->
 </body>
 </html>
