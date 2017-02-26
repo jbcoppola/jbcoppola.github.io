@@ -113,8 +113,8 @@ h1 {
 	padding: 0px;
 	max-width: 90%
 }
-.project-row .full-display {
-
+.project-row .full-display img {
+	max-height: 700px;
 }
 
 /*SKILLS ROW*/

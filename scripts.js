@@ -8,7 +8,26 @@
 
         //gets the href location and scrolls to it
         $("body, html").animate({
-            scrollTop: $($(this).attr('href')).offset().top},
+            scrollTop: $($(this).attr('href')).offset().top
+        },
             "slow");
+    })
+    $("#siegenut").on("click", function () {
+        $(".project-row .full-display img").fadeOut(400, function () {
+            $(".project-row .full-display img").attr("src", "images/siegenut-full.png");
         })
+        .fadeIn(400);
+    });
+    $("#tuscany").on("click", function () {
+        $(".project-row .full-display img").fadeOut(400, function () {
+            $(".project-row .full-display img").attr("src", "images/tuscany-full.png")
+        })
+        .fadeIn(400);
+    });
+    $("#wardrobe").on("click", function () {
+        $(".project-row .full-display img").fadeOut(400, function () {
+            $(".project-row .full-display img").attr("src", "images/wardrobe-full.png")
+        })
+        .fadeIn(400);
+    });
 });
