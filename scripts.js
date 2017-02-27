@@ -12,7 +12,9 @@
         },
             "slow");
     })
+    //functions for replacing the project image with the full example picture
     $("#siegenut").on("click", function () {
+        //fade out, replace source, fade in
         $(".project-row .full-display img").fadeOut(400, function () {
             $(".project-row .full-display img").attr("src", "images/siegenut-full.png");
         })
