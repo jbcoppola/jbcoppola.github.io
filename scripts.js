@@ -15,20 +15,20 @@
     //functions for replacing the project image with the full example picture
     $("#siegenut").on("click", function () {
         //fade out, replace source, fade in
-        $(".project-row .full-display img").fadeOut(400, function () {
-            $(".project-row .full-display img").attr("src", "images/siegenut-full.png");
+        $("#project-display").fadeOut(400, function () {
+            $("#project-display").attr("src", "images/siegenut-full.png");
         })
         .fadeIn(400);
     });
     $("#tuscany").on("click", function () {
-        $(".project-row .full-display img").fadeOut(400, function () {
-            $(".project-row .full-display img").attr("src", "images/tuscany-full.png")
+        $("#project-display").fadeOut(400, function () {
+            $("#project-display").attr("src", "images/tuscany-full.png")
         })
         .fadeIn(400);
     });
     $("#wardrobe").on("click", function () {
-        $(".project-row .full-display img").fadeOut(400, function () {
-            $(".project-row .full-display img").attr("src", "images/wardrobe-full.png")
+        $("#project-display").fadeOut(400, function () {
+            $("#project-display").attr("src", "images/wardrobe-full.png")
         })
         .fadeIn(400);
     });
