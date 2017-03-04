@@ -30,9 +30,8 @@ h1 {
 	margin-right: auto;
 	float: none;
 }
-white-background {
-	border: 5px solid white;
-	background-color: white;
+no-padding {
+	padding: 0px;
 }
 /*center the navbar*/
 .navbar-center {
@@ -76,8 +75,8 @@ white-background {
 	font-size: 30px;
 }
 .header-row .spaced-text h3 {
-	padding: 10px;
-	font-size: 26px;
+	padding: 8px;
+	font-size: 25px;
 }
 .btn-section-nav {
 	border-radius: 50%;
@@ -162,7 +161,6 @@ white-background {
 	font-size: 20px;
 	color: darkslategray;
 }
-
 .skills-row span {
 	font-size: 50px;
 	padding: 20px;
@@ -202,7 +200,4 @@ white-background {
 }
 .contact-row p {
 	display: none;
-}
-.email {
-	letter-spacing: 2px;
 }
