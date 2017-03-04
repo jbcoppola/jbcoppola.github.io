@@ -130,7 +130,7 @@ white-background {
 	margin-bottom: 10px;
 }
 .project-buttons img:hover {
-	background-color: white;
+	padding: 0px;
 }
 .project-row .jumbotron {
 	padding: 0px;
