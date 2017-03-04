@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
 
     //when the nav button is clicked, it scrolls to that section
-    $(".btn-section-nav").on("click", function (event) {
+    $(".btn-section-nav, a").on("click", function (event) {
 
         //stops the href jump from occuring when javascript runs
         event.preventDefault();
@@ -19,7 +19,7 @@
         $($(".projectButtons").children("img")).removeClass("white-background");
         $("#siegenut").addClass("white-background");
         $("#project-display").fadeOut(400, function () {
-            $("#project-display").attr("src", "images/siegenut-full.png");
+            $(this).attr("src", "images/siegenut-full.png");
         })
         .fadeIn(400);
     });
@@ -27,7 +27,7 @@
         $($(".projectButtons").children("img")).removeClass("white-background");
         $(this).addClass("white-background");
         $("#project-display").fadeOut(400, function () {
-            $("#project-display").attr("src", "images/tuscany-full.png")
+            $(this).attr("src", "images/tuscany-full.png")
         })
         .fadeIn(400);
     });
@@ -35,7 +35,7 @@
         $($(".projectButtons").children("img")).removeClass("white-background");
         $(this).addClass("white-background");
         $("#project-display").fadeOut(400, function () {
-            $("#project-display").attr("src", "images/wardrobe-full.png")
+            $(this).attr("src", "images/wardrobe-full.png")
         })
         .fadeIn(400);
     });
