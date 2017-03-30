@@ -25,7 +25,7 @@ function clickProject(clicked, newImage) {
     $($(".projectButtons").children("img")).removeClass("no-padding");
     $(clicked).addClass("no-padding");
     //fade out, replace source, fade in
-    $("#project-display").fadeOut(400, function () {
+    $("#project-display").fadeOut("slow", function () {
         $(this).attr("src", newImage);
     })
     .fadeIn(400);
