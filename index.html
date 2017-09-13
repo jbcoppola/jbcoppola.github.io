@@ -42,7 +42,7 @@
 		</div><!-- /.container-fluid -->
 	</nav>
 	<!--end of navbar-->
-	<div class="container-fluid">
+	<div class="container-fluid main">
 		<!--Top header - the banner-->
 		<div class="row header-row" id="header">
 			<div class="col-md-6 col-md-offset-3">
@@ -50,9 +50,11 @@
 					<p><h2>Joseph Coppola</h2></p>
 					<p><h3>Software Developer</h3></p>
 				</div>
-				<a class="btn btn-default btn-section-nav" href="#personal" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                <div class="row button-row">
+                    <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#personal" role="button"></a>
+                </div>
 			</div>
-
+            
 		</div>
 		<!--end of top header-->
 		<!--Biography section-->
@@ -74,7 +76,7 @@
 			</div>
 		</div>
 		<div class="row button-row">
-			<a class="btn btn-default btn-section-nav" href="#projects" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+			<a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#projects" role="button"></a>
 		</div>
 		<!--end of biography section-->
 		<!--Project showcase section-->
@@ -98,7 +100,7 @@
 			</div>
 		</div>
 		<div class="row button-row">
-			<a class="btn btn-default btn-section-nav" href="#skills" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+			<a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#skills" role="button"></a>
 		</div>
 		<!--Skills section-->
 		<div class="row skills-row" id="skills">
@@ -147,25 +149,31 @@
 			</div>
 		</div>
 		<div class="row button-row">
-			<a class="btn btn-default btn-section-nav" href="#contacts" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+			<a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#contacts" role="button"></a>
 		</div>
 		<!--end of skills section-->
 		<!--contact section-->
-		<div class="row contact-row" id="contacts">
-			<p><h1>Contact</h1></p>
-			<div class="col-md-6 spaced-text">
-				<a class="btn btn-default" href="https://www.linkedin.com/in/joseph-coppola/" role="button">LinkedIn</a>
-			</div>
-			<div class="col-md-6 spaced-text">
-				<a class="btn btn-default" href="https://github.com/jbcoppola" role="button">Github</a>
-			</div>
-			<div class="col-md-6 col-md-offset-3 spaced-text">
-				<a class="btn btn-default" href="mailto:jbcoppola@gmail.com" role="button">Email</a>
-			</div>
-		</div>
-		<div class="row button-row">
-			<a class="btn btn-default btn-section-nav" href="#header" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
-		</div>
+        <div class="row contact-row" id="contacts">
+            <p><h1>Contact</h1></p>
+            <div class="row">
+                <div class="col-xs-2 col-xs-offset-3">
+                    <a class="btn btn-default btn-circle img-btn" href="https://www.linkedin.com/in/joseph-coppola/" target="_blank" role="button">
+                        <img src="images/linkedin.png" />
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a class="btn btn-default btn-circle img-btn" href="https://github.com/jbcoppola" role="button" target="_blank">
+                        <img src="images/github.png" /></a>
+                </div>
+                <div class="col-xs-2">
+                    <a class="btn btn-default btn-circle glyphicon glyphicon-envelope" href="mailto:jbcoppola@gmail.com" target="_blank" role="button"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row button-row">
+            <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-up" href="#header" role="button"></a>
+        </div>
 		<!--end of contact section-->
 		<div class="row footer">
 			<p></p>
