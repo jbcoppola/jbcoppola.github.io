@@ -129,20 +129,23 @@ no-padding {
 	position: relative;
 }
 .project-buttons {
-    padding: 0px 30px;
-    margin-bottom: 30px;
+    margin: 0px 30px;
 }
 .project-buttons img {
-	max-height: 180px;
-	padding: 5px;
-	margin-bottom: 10px;
+    height: 95%;
+    width: 95%;
+    padding-bottom: 21px;
 }
 .project-buttons img:hover {
-	padding: 0px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 100%;
 }
 .project-buttons img:active {
-    margin-bottom: 5px;
-    margin-top: 5px;
+    padding: 10px 0px 0px 0px
+}
+.full-display {
+    margin-top: 30px;
 }
 .project-row .full-display img {
 	border: 8px solid rgb(180,180,180);
