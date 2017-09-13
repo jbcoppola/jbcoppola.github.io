@@ -137,6 +137,10 @@ no-padding {
 .project-buttons img:hover {
 	padding: 0px;
 }
+.project-buttons img:active {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
 .project-row .jumbotron {
 	padding: 0px;
 	max-width: 90%
