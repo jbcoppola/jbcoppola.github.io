@@ -1,183 +1,189 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<meta charset="utf-8" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-	<link href="site.css" rel="stylesheet" />
-	<script src="scripts.js"></script>
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik:400,700" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <link href="site.css" rel="stylesheet" />
+    <script src="scripts.js"></script>
+    <script src="images/controllers/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik:400,700" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-menu" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="top-navbar-menu">
-				<ul class="nav navbar-nav navbar-center">
-					<li><a href="#header">Top</a></li>
-					<li><a href="#personal">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#contacts">Contact</a></li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-	</nav>
-	<!--end of navbar-->
-	<div class="container-fluid main">
-		<!--Top header - the banner-->
-		<div class="row header-row" id="header">
-			<div class="col-md-6 col-md-offset-3">
-				<div class="spaced-text">
-					<p><h2>Joseph Coppola</h2></p>
-					<p><h3>Software Developer</h3></p>
-				</div>
-                <div class="row button-row">
-                    <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#personal" role="button"></a>
+    <div ng-app="portfolio" ng-controller="main">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-menu" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-			</div>
-            
-		</div>
-		<!--end of top header-->
-		<!--Biography section-->
-		<div class="row personal-row" id="personal">
-			<div class="col-md-4 headshot">
-				<img src="images/JosephCoppolaHeadshot_cr.jpg" class="img-circle img-responsive" />
-			</div>
-			<div class="col-md-8 text">
-				<p><h1>About Me</h1></p>
-				<p>
-					I'm an ASU graduate with a Bachelor's in Fine Arts. After discovering an interest in programming
-					I  moved from Arizona to Ohio to attend the full-stack boot camp We Can Code IT, where I received
-					a certificate in Software Engineering. I've learned several programming languages both by self-study
-					and official coursework, including Python, C++ and C#. My dual aptitude  in both the artistic and
-					technical fields provides me with a unique perspective and a broader skill set to work through new
-					challenges. I specialize in combining my design background with clean code to create applications
-					that are easy to use, maintain and build upon.
-				</p>
-			</div>
-		</div>
-		<div class="row button-row">
-			<a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#projects" role="button"></a>
-		</div>
-		<!--end of biography section-->
-		<!--Project showcase section-->
-		<div class="row project-row" id="projects">
-			<p><h1>Projects</h1></p>
-			<div class="col-md-3 project-buttons">
-				<div class="row">
-					<div class="col-md-12 col-sm-4 col-xs-12">
-						<img src="images/thumbs/siegenut.png" class="img-responsive center-block white-background" id="siegenut" />
-					</div>
-					<div class="col-md-12 col-sm-4 col-xs-12">
-						<img src="images/thumbs/tuscanyvilla.png" class="img-responsive center-block" id="tuscany" />
-					</div>
-					<div class="col-md-12 col-sm-4 col-xs-12">
-						<img src="images/thumbs/wardrobe.png" class="img-responsive center-block" id="wardrobe" />
-					</div>
-				</div>
-			</div>
-			<div class="col-md-9 hidden-xs full-display">
-				<img src="images/Blank.png" class="img-responsive center-block" id="project-display" />
-			</div>
-		</div>
-		<div class="row button-row">
-			<a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#skills" role="button"></a>
-		</div>
-		<!--Skills section-->
-		<div class="row skills-row" id="skills">
-			<p><h1>Skills</h1></p>
-			<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-				<div class="col-md-3">
-					<div class="icon">
-						<span class="glyphicon glyphicon-sort hidden-sm hidden-xs"></span>
-					</div>
-					<div class="skills">
-						<p><h2>Front-end Development</h2></p>
-						<p><h2>Back-end Development</h2></p>
-						<p><h2>ASP.NET</h2></p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="icon">
-						<span class="glyphicon glyphicon-copyright-mark hidden-sm hidden-xs"></span>
-					</div>
-					<div class="skills">
-						<p><h2>C#</h2></p>
-						<p><h2>C++</h2></p>
-						<p><h2>C</h2></p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="icon">
-						<span class="glyphicon glyphicon-duplicate hidden-sm hidden-xs"></span>
-					</div>
-					<div class="skills">
-						<p><h2>Graphic Design</h2></p>
-						<p><h2>Adobe Illustrator</h2></p>
-						<p><h2>Adobe Photoshop</h2></p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="icon">
-						<span class="glyphicon glyphicon-console hidden-sm hidden-xs"></span>
-					</div>
-					<div class="skills">
-						<p><h2>HTML / CSS / Bootstrap</h2></p>
-						<p><h2>Javascript / Jquery</h2></p>
-						<p><h2>Python</h2></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row button-row">
-			<a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#contacts" role="button"></a>
-		</div>
-		<!--end of skills section-->
-		<!--contact section-->
-        <div class="row contact-row" id="contacts">
-            <p><h1>Contact</h1></p>
-            <div class="row">
-                <div class="col-xs-2 col-xs-offset-3">
-                    <a class="btn btn-default btn-circle img-btn" href="https://www.linkedin.com/in/joseph-coppola/" target="_blank" role="button">
-                        <img src="images/linkedin.png" />
-                    </a>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="top-navbar-menu">
+                    <ul class="nav navbar-nav navbar-center">
+                        <li><a href="#header">Top</a></li>
+                        <li><a href="#personal">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contacts">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!--end of navbar-->
+        <div class="container-fluid main">
+            <!--Top header - the banner-->
+            <div class="row header-row" id="header">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="spaced-text">
+                        <p><h2>Joseph Coppola</h2></p>
+                        <p><h3>Software Developer</h3></p>
+                    </div>
+                    <div class="row button-row">
+                        <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#personal" role="button"></a>
+                    </div>
                 </div>
-                <div class="col-xs-2">
-                    <a class="btn btn-default btn-circle img-btn" href="https://github.com/jbcoppola" role="button" target="_blank">
-                        <img src="images/github.png" /></a>
+
+            </div>
+            <!--end of top header-->
+            <!--Biography section-->
+            <div class="row personal-row" id="personal">
+                <div class="col-md-4 headshot">
+                    <img src="images/JosephCoppolaHeadshot_cr.jpg" class="img-circle img-responsive" />
                 </div>
-                <div class="col-xs-2">
-                    <a class="btn btn-default btn-circle glyphicon glyphicon-envelope" href="mailto:jbcoppola@gmail.com" target="_blank" role="button"></a>
+                <div class="col-md-8 text">
+                    <p><h1>About Me</h1></p>
+                    <p>
+                        I'm an ASU graduate with a Bachelor's in Fine Arts. After discovering an interest in programming
+                        I  moved from Arizona to Ohio to attend the full-stack boot camp We Can Code IT, where I received
+                        a certificate in Software Engineering. I've learned several programming languages both by self-study
+                        and official coursework, including Python, C++ and C#. My dual aptitude  in both the artistic and
+                        technical fields provides me with a unique perspective and a broader skill set to work through new
+                        challenges. I specialize in combining my design background with clean code to create applications
+                        that are easy to use, maintain and build upon.
+                    </p>
                 </div>
             </div>
-        </div>
+            <div class="row button-row">
+                <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#projects" role="button"></a>
+            </div>
+            <!--end of biography section-->
+            <!--Project showcase section-->
+            <div class="row project-row" id="projects">
+                <p><h1>Projects</h1></p>
+                <div class="col-md-3 project-buttons">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-4 col-xs-12">
+                            <img src="images/thumbs/siegenut.png" class="img-responsive center-block white-background" ng-click="display = 'siegenut'" id="siegenut" />
+                        </div>
+                        <div class="col-md-12 col-sm-4 col-xs-12">
+                            <img src="images/thumbs/tuscanyvilla.png" class="img-responsive center-block" ng-click="display = 'tuscany'" id="tuscany" />
+                        </div>
+                        <div class="col-md-12 col-sm-4 col-xs-12">
+                            <img src="images/thumbs/wardrobe.png" class="img-responsive center-block" ng-click="display = 'wardrobe'" id="wardrobe" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 hidden-xs full-display">
+                    <img src="images/Blank.png" ng-show="display == 'blank'" />
+                    <img src="images/tuscany-full.png" ng-show="display == 'siegenut'"/>
+                    <img src="images/siegenut-full.png" ng-show="display == 'tuscany'"/>
+                    <img src="images/wardrobe-full.png" ng-show="display == 'wardrobe'"/>
+                </div>
+            </div>
+            <div class="row button-row">
+                <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#skills" role="button"></a>
+            </div>
+            <!--Skills section-->
+            <div class="row skills-row" id="skills">
+                <p><h1>Skills</h1></p>
+                <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                    <div class="col-md-3">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-sort hidden-sm hidden-xs"></span>
+                        </div>
+                        <div class="skills">
+                            <p><h2>Front-end Development</h2></p>
+                            <p><h2>Back-end Development</h2></p>
+                            <p><h2>ASP.NET</h2></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-copyright-mark hidden-sm hidden-xs"></span>
+                        </div>
+                        <div class="skills">
+                            <p><h2>C#</h2></p>
+                            <p><h2>C++</h2></p>
+                            <p><h2>C</h2></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-duplicate hidden-sm hidden-xs"></span>
+                        </div>
+                        <div class="skills">
+                            <p><h2>Graphic Design</h2></p>
+                            <p><h2>Adobe Illustrator</h2></p>
+                            <p><h2>Adobe Photoshop</h2></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-console hidden-sm hidden-xs"></span>
+                        </div>
+                        <div class="skills">
+                            <p><h2>HTML / CSS / Bootstrap</h2></p>
+                            <p><h2>Javascript / Jquery</h2></p>
+                            <p><h2>Python</h2></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row button-row">
+                <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#contacts" role="button"></a>
+            </div>
+            <!--end of skills section-->
+            <!--contact section-->
+            <div class="row contact-row" id="contacts">
+                <p><h1>Contact</h1></p>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-3">
+                        <a class="btn btn-default btn-circle img-btn" href="https://www.linkedin.com/in/joseph-coppola/" target="_blank" role="button">
+                            <img src="images/linkedin.png" />
+                        </a>
+                    </div>
+                    <div class="col-xs-2">
+                        <a class="btn btn-default btn-circle img-btn" href="https://github.com/jbcoppola" role="button" target="_blank">
+                            <img src="images/github.png" />
+                        </a>
+                    </div>
+                    <div class="col-xs-2">
+                        <a class="btn btn-default btn-circle glyphicon glyphicon-envelope" href="mailto:jbcoppola@gmail.com" target="_blank" role="button"></a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="row button-row">
-            <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-up" href="#header" role="button"></a>
-        </div>
-		<!--end of contact section-->
-		<div class="row footer">
-			<p></p>
-		</div>
-	</div> <!--main container-fluid div-->
+            <div class="row button-row">
+                <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-up" href="#header" role="button"></a>
+            </div>
+            <!--end of contact section-->
+            <div class="row footer">
+                <p></p>
+            </div>
+        </div> <!--main container-fluid div-->
+    </div>
 </body>
 </html>

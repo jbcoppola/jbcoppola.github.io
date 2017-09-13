@@ -14,9 +14,9 @@
     });
 
     //project section buttons
-    $("#siegenut").on("click", function () { clickProject(this, "images/siegenut-full.png") });
-    $("#tuscany").on("click", function () { clickProject(this, "images/tuscany-full.png") });
-    $("#wardrobe").on("click", function () { clickProject(this, "images/wardrobe-full.png") });
+    //$("#siegenut").on("click", function () { clickProject(this, "images/siegenut-full.png") });
+    //$("#tuscany").on("click", function () { clickProject(this, "images/tuscany-full.png") });
+    //$("#wardrobe").on("click", function () { clickProject(this, "images/wardrobe-full.png") });
 });
 
 //function for replacing the project image with the full example picture
