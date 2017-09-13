@@ -83,24 +83,28 @@
             <!--Project showcase section-->
             <div class="row project-row" id="projects">
                 <p><h1>Projects</h1></p>
-                <div class="col-md-3 project-buttons">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-4 col-xs-12">
-                            <img src="images/thumbs/siegenut.png" class="img-responsive center-block white-background" ng-click="display = 'siegenut'" id="siegenut" />
+                    <div class="row project-buttons">
+                        <div class="col-sm-3">
+                            <img src="images/thumbs/siegenut.png" class="img-responsive center-block" ng-click="display = 'siegenut'" />
                         </div>
-                        <div class="col-md-12 col-sm-4 col-xs-12">
-                            <img src="images/thumbs/tuscanyvilla.png" class="img-responsive center-block" ng-click="display = 'tuscany'" id="tuscany" />
+                        <div class="col-sm-3">
+                            <img src="images/thumbs/tuscanyvilla.png" class="img-responsive center-block" ng-click="display = 'tuscany'"/>
                         </div>
-                        <div class="col-md-12 col-sm-4 col-xs-12">
-                            <img src="images/thumbs/wardrobe.png" class="img-responsive center-block" ng-click="display = 'wardrobe'" id="wardrobe" />
+                        <div class="col-sm-3">
+                            <img src="images/thumbs/wardrobe.png" class="img-responsive center-block" ng-click="display = 'wardrobe'"/>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="images/thumbs/companyLister.png" class="img-responsive center-block" ng-click="display = 'companyLister'" />
                         </div>
                     </div>
-                </div>
-                <div class="col-md-9 hidden-xs full-display">
-                    <img src="images/Blank.png" ng-show="display == 'blank'" />
-                    <img src="images/tuscany-full.png" ng-show="display == 'tuscany'"/>
-                    <img src="images/siegenut-full.png" ng-show="display == 'siegenut'"/>
-                    <img src="images/wardrobe-full.png" ng-show="display == 'wardrobe'"/>
+                <div class="row hidden-xs full-display">
+                    <div class="col-sm-12 col-xs-hidden text-center">
+                        <img src="images/Blank.png" ng-show="display == 'blank'" />
+                        <img src="images/tuscany-full.png" ng-show="display == 'tuscany'" />
+                        <img src="images/siegenut-full.png" ng-show="display == 'siegenut'" />
+                        <img src="images/wardrobe-full.png" ng-show="display == 'wardrobe'" />
+                        <div ng-show="display == 'companyLister'"><img src="images/companylister-full.png" /><a href="https://jbcoppola.github.io/InsitenCode/" target="_blank"><h1>Live Demo</h1></a></div>
+                    </div>
                 </div>
             </div>
             <div class="row button-row">
