@@ -11,7 +11,7 @@ app.controller('main', function ($scope, $location, $anchorScroll) {
         },
         {
             "glyphicon": "glyphicon-copyright-mark",
-            "skills": ["C#", "C++", "CT"]
+            "skills": ["C#", "C++", "C"]
         },
         {
             "glyphicon": "glyphicon-duplicate",
