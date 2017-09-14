@@ -156,9 +156,18 @@ no-padding {
 
 .skills-row {
 	text-align: center;
-	padding-bottom: 75px;
+    padding-bottom: 135px;
 }
-
+.skills-row h1 {
+    margin-bottom: 50px;
+}
+.skills-row h2 {
+	font-size: 20px;
+	color: darkslategray;
+}
+.skills-row .main-column {
+	padding-bottom: 135px;
+}
 .skills-row .skills {
 	display: flex;
 	flex-direction: column;
@@ -169,14 +178,10 @@ no-padding {
 	margin-bottom: 10px;
 	height: 300px;
 }
-.skills-row h2 {
-	font-size: 20px;
-	color: darkslategray;
-}
+
 .skills-row span {
 	font-size: 50px;
 	padding: 20px;
-	/*border: 4px solid rgb(231,231,231);*/
 	border-radius: 50%;
 	background-color: white;
 	color: gray;
@@ -189,9 +194,9 @@ no-padding {
 .contact-row {
 	background-color: rgb(40,40,40);
 	text-align: center;
-	padding-bottom: 125px;
+	padding-bottom: 155px;
 }
-.contact-row .row {
+.contact-row  > div {
     margin-top: 50px;
 }
 .contact-row .btn {
