@@ -1,8 +1,45 @@
 ﻿var app = angular.module('portfolio', ['ngAnimate']);
 
-app.controller('main', function ($scope, $location, $anchorScroll) {
-    //displays the project pictures
-    $scope.display = 'blank';
+app.controller('main', function ($scope, $location, $anchorScroll, $filter) {
+
+    $scope.projects = [
+        {
+            "name": "blank",
+            "thumb": "disabled",
+            "img": "Blank",
+            "link": "disabled"
+        },
+        {
+            "name": "tuscany",
+            "thumb":"tuscanyvilla",
+            "img": "tuscany-full",
+            "link": "disabled"
+        },
+        {
+            "name": "siegenut",
+            "thumb": "siegenut",
+            "img": "siegenut-full",
+            "link": "disabled"
+        },
+        {
+            "name": "wardrobe",
+            "thumb": "wardrobe",
+            "img": "wardrobe-full",
+            "link": "disabled"
+        },
+        {
+            "name": "companylister",
+            "thumb": "companyLister",
+            "img": "companylister-full",
+            "link": "https://jbcoppola.github.io/InsitenCode/"
+        }
+    ];
+    $scope.setProject = function (name) {
+        $scope.currentProject = $filter('filter')($scope.projects, { "name": name })[0];
+        console.log($scope.currentProject);
+    }
+
+    $scope.setProject("blank");
 
     //for the skills section
     $scope.skillList = [

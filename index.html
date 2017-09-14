@@ -87,29 +87,16 @@
                 <p><h1>Projects</h1></p>
                 <div class="col-md-12">
                     <div class="row project-buttons">
-                        <div class="col-sm-3">
-                            <img src="images/thumbs/siegenut.png" class="img-responsive center-block" ng-click="display = 'siegenut'" />
-                        </div>
-                        <div class="col-sm-3">
-                            <img src="images/thumbs/tuscanyvilla.png" class="img-responsive center-block" ng-click="display = 'tuscany'" />
-                        </div>
-                        <div class="col-sm-3">
-                            <img src="images/thumbs/wardrobe.png" class="img-responsive center-block" ng-click="display = 'wardrobe'" />
-                        </div>
-                        <div class="col-sm-3">
-                            <img src="images/thumbs/companyLister.png" class="img-responsive center-block" ng-click="display = 'companyLister'" />
+                        <div class="col-sm-3" ng-repeat="project in projects" ng-if="project.name != 'blank'">
+                            <img src="images/thumbs/{{project.thumb}}.png" class="img-responsive center-block" ng-click="setProject(project.name)" />
                         </div>
                     </div>
                     <div class="row full-display text-center">
                         <div class="col-sm-12 ">
-                            <img src="images/Blank.png" ng-show="display == 'blank'" />
-                            <img src="images/tuscany-full.png" ng-show="display == 'tuscany'" />
-                            <img src="images/siegenut-full.png" ng-show="display == 'siegenut'" />
-                            <img src="images/wardrobe-full.png" ng-show="display == 'wardrobe'" />
-                            <img src="images/companylister-full.png" ng-show="display == 'companyLister'" />
+                            <img ng-src="images/{{currentProject.img}}.png" />
                         </div>
                         <div class="col-sm-12 project-button-demo">
-                            <a class="btn" role="button" href="https://jbcoppola.github.io/InsitenCode/" target="_blank" ng-show="display== 'companyLister'">Live Demo</a>
+                            <a class="btn" role="button" ng-href="{{currentProject.link}}" target="{{currentProject.link}}" ng-show="currentProject.link != 'disabled'">Live Demo</a>
                         </div>
                     </div>
                 </div>
@@ -162,11 +149,7 @@
             <div class="row button-row">
                 <a class="btn btn-lg btn-section-nav dark glyphicon glyphicon-menu-up" href="#header" role="button"></a>
             </div>
-            <!--end of contact section-->
-            <div class="row footer">
-                <p></p>
-            </div>
-        </div>
+        </div><!--end of contact section-->
     </div> <!--main container-fluid div-->
 </body>
 </html>
