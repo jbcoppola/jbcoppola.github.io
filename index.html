@@ -116,46 +116,20 @@
             </div>
             <!--Skills section-->
             <div class="row skills-row" id="skills">
-                    <p><h1>Skills</h1></p>
+                <p><h1>Skills</h1></p>
                 <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <div class="col-md-3">
-                        <div class="icon">
-                            <span class="glyphicon glyphicon-sort hidden-sm hidden-xs"></span>
-                        </div>
-                        <div class="skills">
-                            <p><h2>Front-end Development</h2></p>
-                            <p><h2>Back-end Development</h2></p>
-                            <p><h2>ASP.NET</h2></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="icon">
-                            <span class="glyphicon glyphicon-copyright-mark hidden-sm hidden-xs"></span>
-                        </div>
-                        <div class="skills">
-                            <p><h2>C#</h2></p>
-                            <p><h2>C++</h2></p>
-                            <p><h2>C</h2></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="icon">
-                            <span class="glyphicon glyphicon-duplicate hidden-sm hidden-xs"></span>
-                        </div>
-                        <div class="skills">
-                            <p><h2>Graphic Design</h2></p>
-                            <p><h2>Adobe Illustrator</h2></p>
-                            <p><h2>Adobe Photoshop</h2></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="icon">
-                            <span class="glyphicon glyphicon-console hidden-sm hidden-xs"></span>
-                        </div>
-                        <div class="skills">
-                            <p><h2>HTML / CSS / Bootstrap</h2></p>
-                            <p><h2>Javascript / Jquery</h2></p>
-                            <p><h2>Angular</h2></p>
+                    <div class="col-md-3" ng-repeat="skill in skillList">
+                        <div class="row text-center">
+                            <div class="col-xs-10 col-xs-offset-1 icon">
+                                <span class="glyphicon {{skill.glyphicon}} hidden-sm hidden-xs"></span>
+                            </div>
+                            <div class="col-xs-6 col-xs-offset-3 white-space"></div>
+                            <div class="col-xs-10 col-xs-offset-1 skills">
+                                <p><h2>{{skill.skills[0]}}</h2></p>
+                                <p><h2>{{skill.skills[1]}}</h2></p>
+                                <p><h2>{{skill.skills[2]}}</h2></p>
+                            </div>
+                            <div class="col-xs-6 col-xs-offset-3 white-space"></div>
                         </div>
                     </div>
                 </div>
@@ -167,19 +141,19 @@
             <!--contact section-->
             <div class="row contact-row" id="contacts">
                 <p><h1>Contact</h1></p>
-                    <div class="col-xs-2 col-xs-offset-3">
-                        <a class="btn btn-default btn-circle img-btn" href="https://www.linkedin.com/in/joseph-coppola/" target="_blank" role="button">
-                            <img src="images/linkedin.png" />
-                        </a>
-                    </div>
-                    <div class="col-xs-2">
-                        <a class="btn btn-default btn-circle img-btn" href="https://github.com/jbcoppola" role="button" target="_blank">
-                            <img src="images/github.png" />
-                        </a>
-                    </div>
-                    <div class="col-xs-2">
-                        <a class="btn btn-default btn-circle glyphicon glyphicon-envelope" href="mailto:jbcoppola@gmail.com" target="_blank" role="button"></a>
-                    </div>
+                <div class="col-xs-2 col-xs-offset-3">
+                    <a class="btn btn-default btn-circle img-btn" href="https://www.linkedin.com/in/joseph-coppola/" target="_blank" role="button">
+                        <img src="images/linkedin.png" />
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a class="btn btn-default btn-circle img-btn" href="https://github.com/jbcoppola" role="button" target="_blank">
+                        <img src="images/github.png" />
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a class="btn btn-default btn-circle glyphicon glyphicon-envelope" href="mailto:jbcoppola@gmail.com" target="_blank" role="button"></a>
+                </div>
             </div>
 
             <div class="row button-row">

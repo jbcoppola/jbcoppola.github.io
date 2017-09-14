@@ -174,17 +174,20 @@ no-padding {
 	justify-content: space-between;
 	border: 6px solid rgb(231,231,231);
 	padding: 15px;
-	margin-top: 10px;
-	margin-bottom: 10px;
 	height: 300px;
+    margin-top: -6px;
+    margin-bottom: -6px;
 }
-
 .skills-row span {
 	font-size: 50px;
 	padding: 20px;
 	border-radius: 50%;
 	background-color: white;
 	color: gray;
+}
+.white-space {
+    border: 6px solid white;
+    z-index: 1;
 }
 /* CONTACT ROW */
 .btn-circle {
