@@ -53,11 +53,11 @@
                         <p><h2>Joseph Coppola</h2></p>
                         <p><h3>Software Developer</h3></p>
                     </div>
-                    <div class="row button-row">
-                        <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#personal" role="button"></a>
-                    </div>
                 </div>
+            </div>
 
+            <div class="row button-row">
+                <a class="btn btn-lg btn-section-nav dark glyphicon glyphicon-menu-down" href="#personal" role="button"></a>
             </div>
             <!--end of top header-->
             <!--Biography section-->
@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="row button-row">
-                <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#projects" role="button"></a>
+                <a class="btn btn-lg btn-section-nav light glyphicon glyphicon-menu-down" href="#projects" role="button"></a>
             </div>
             <!--end of biography section-->
             <!--Project showcase section-->
@@ -100,19 +100,22 @@
                             <img src="images/thumbs/companyLister.png" class="img-responsive center-block" ng-click="display = 'companyLister'" />
                         </div>
                     </div>
-                    <div class="row full-display">
-                        <div class="col-sm-12 text-center">
+                    <div class="row full-display text-center">
+                        <div class="col-sm-12 ">
                             <img src="images/Blank.png" ng-show="display == 'blank'" />
                             <img src="images/tuscany-full.png" ng-show="display == 'tuscany'" />
                             <img src="images/siegenut-full.png" ng-show="display == 'siegenut'" />
                             <img src="images/wardrobe-full.png" ng-show="display == 'wardrobe'" />
-                            <div ng-show="display == 'companyLister'"><img src="images/companylister-full.png" /><a href="https://jbcoppola.github.io/InsitenCode/" target="_blank"><h1>Live Demo</h1></a></div>
+                            <img src="images/companylister-full.png" ng-show="display == 'companyLister'" />
+                        </div>
+                        <div class="col-sm-12 project-button-demo">
+                            <a class="btn" role="button" href="https://jbcoppola.github.io/InsitenCode/" target="_blank" ng-show="display== 'companyLister'">Live Demo</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row button-row">
-                <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#skills" role="button"></a>
+                <a class="btn btn-lg btn-section-nav dark glyphicon glyphicon-menu-down" href="#skills" role="button"></a>
             </div>
             <!--Skills section-->
             <div class="row skills-row" id="skills">
@@ -135,7 +138,7 @@
                 </div>
             </div>
             <div class="row button-row">
-                <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-down" href="#contacts" role="button"></a>
+                <a class="btn btn-lg btn-section-nav light glyphicon glyphicon-menu-down" href="#contacts" role="button"></a>
             </div>
             <!--end of skills section-->
             <!--contact section-->
@@ -157,13 +160,13 @@
             </div>
 
             <div class="row button-row">
-                <a class="btn btn-default btn-lg btn-section-nav glyphicon glyphicon-menu-up" href="#header" role="button"></a>
+                <a class="btn btn-lg btn-section-nav dark glyphicon glyphicon-menu-up" href="#header" role="button"></a>
             </div>
             <!--end of contact section-->
             <div class="row footer">
                 <p></p>
             </div>
-        </div> <!--main container-fluid div-->
-    </div>
+        </div>
+    </div> <!--main container-fluid div-->
 </body>
 </html>

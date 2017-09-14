@@ -1,9 +1,10 @@
 ﻿var app = angular.module('portfolio', ['ngAnimate']);
 
 app.controller('main', function ($scope, $location, $anchorScroll) {
+    //displays the project pictures
     $scope.display = 'blank';
 
-
+    //for the skills section
     $scope.skillList = [
         {
             "glyphicon": "glyphicon-sort",

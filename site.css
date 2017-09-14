@@ -79,21 +79,32 @@ no-padding {
 	padding: 8px;
 	font-size: 25px;
 }
-.btn-section-nav {
+.btn-section-nav,
+.btn-section-nav:focus {
 	border-radius: 50%;
     padding: 11px 0px 0px 3px;
-	color: gray;
+	color: darkgray;
 	background-image: none;
-	background-color: rgba(0,0,0,0);
-	border: 2px solid gainsboro;
+	background-color: transparent;
+    border: 2px solid gainsboro;
 	margin: -80px 15px 0px 15px;
 	z-index: 1;
     height: 50px;
     width: 50px;
 }
-.btn-section-nav:active,
-.btn-section-nav:hover {
-
+.btn-section-nav.light:hover  {
+    border-color: gray;
+    color: gray;
+}
+.btn-section-nav.dark:hover {
+    border-color: white;
+    color: white;
+}
+.btn-section-nav.light:hover:active {
+    background-color: rgba(0,0,0,0.1);
+}
+.btn-section-nav.dark:hover:active {
+    background-color: rgba(255,255,255,0.3);
 }
 .btn-section-nav span {
     padding-top: 5px;
@@ -150,6 +161,27 @@ no-padding {
 .project-row .full-display img {
 	border: 8px solid rgb(180,180,180);
     max-width: 95%;
+}
+.project-button-demo {
+    margin-top: 20px;
+    height: 150px;
+}
+.project-button-demo .btn {
+    margin-bottom: 10px;
+    padding: 30px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: 0;
+}
+.project-button-demo .btn:hover {
+    background-color: rgba(255,255,255,0.6);
+}
+.project-button-demo .btn:active {
+    margin: 10px 0px 0px 0px;
 }
 
 /*SKILLS ROW*/
