@@ -85,18 +85,18 @@
             <!--Project showcase section-->
             <div class="row project-row" id="projects">
                 <p><h1>Projects</h1></p>
-                <div class="col-md-12">
-                    <div class="row project-buttons">
-                        <div class="col-sm-3" ng-repeat="project in projects" ng-if="project.name != 'blank'">
-                            <img src="images/thumbs/{{project.thumb}}.png" class="img-responsive center-block" ng-click="setProject(project.name)" />
-                        </div>
+                <div class="col-sm-3 project-buttons">
+                    <div class="row" ng-repeat="project in projects" ng-if="project.name != 'blank'">
+                        <img src="images/thumbs/{{project.thumb}}.png" class="img-responsive center-block" ng-click="setProject(project.name)" />
                     </div>
-                    <div class="row full-display text-center">
-                        <div class="col-sm-12 ">
-                            <img ng-src="images/{{currentProject.img}}.png" />
-                        </div>
-                        <div class="col-sm-12 project-button-demo">
-                            <a class="btn" role="button" ng-href="{{currentProject.link}}" target="{{currentProject.link}}" ng-show="currentProject.link != 'disabled'">Live Demo</a>
+                </div>
+                <div class="col-sm-9">
+                    <div class="full-display">
+                        <img ng-src="images/{{currentProject.img}}.png" />
+                        <div class="description text-center"><p>{{currentProject.description}}</p></div>
+                        <div class="project-button-links">
+                            <a class="btn project-button" role="button" ng-href="{{currentProject.github}}" target="{{currentProject.github}}" ng-show="currentProject.github != 'disabled'"">Github</a>
+                            <a class="btn project-button" role="button" ng-href="{{currentProject.link}}" target="{{currentProject.link}}" ng-show="currentProject.link != 'disabled'">Live Demo</a>
                         </div>
                     </div>
                 </div>

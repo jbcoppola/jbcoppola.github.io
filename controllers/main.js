@@ -7,36 +7,29 @@ app.controller('main', function ($scope, $location, $anchorScroll, $filter) {
             "name": "blank",
             "thumb": "disabled",
             "img": "Blank",
-            "link": "disabled"
-        },
-        {
-            "name": "tuscany",
-            "thumb":"tuscanyvilla",
-            "img": "tuscany-full",
-            "link": "disabled"
+            "link": "disabled",
+            "github":"disabled",
+            "description": "Click one of the project buttons on the left to display it with its description and a link to a live demo"
         },
         {
             "name": "siegenut",
             "thumb": "siegenut",
             "img": "siegenut-full",
-            "link": "disabled"
-        },
-        {
-            "name": "wardrobe",
-            "thumb": "wardrobe",
-            "img": "wardrobe-full",
-            "link": "disabled"
+            "link": "disabled",
+            "github": "https://github.com/jbcoppola/SiegeNut",
+            "description": "Made using Microsoft-MVC with C# and a persistent SQL database. A website for reviewing various pieces of siege equipment. Make a review for a piece of equipment or sort through reviews by field."
         },
         {
             "name": "companylister",
             "thumb": "companyLister",
             "img": "companylister-full",
-            "link": "https://jbcoppola.github.io/InsitenCode/"
+            "link": "https://jbcoppola.github.io/InsitenCode/",
+            "github": "https://github.com/jbcoppola/InsitenCode",
+            "description": "Angular website with UI-bootstrap and non-persistent data. Enter companies into a list and view entries in either card or list UI view. Complete CRUD functionality. Display how many items are on one page at a time using pagination."
         }
     ];
     $scope.setProject = function (name) {
         $scope.currentProject = $filter('filter')($scope.projects, { "name": name })[0];
-        console.log($scope.currentProject);
     }
 
     $scope.setProject("blank");
