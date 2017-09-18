@@ -8,25 +8,8 @@
 
         //gets the href location and scrolls to it
         $("body, html").animate({
-            scrollTop: $($(this).attr('href')).offset().top
+            scrollTop: $($(this).attr('href')).offset().top - 50
         },
             "slow");
     });
-
-    //project section buttons
-    //$("#siegenut").on("click", function () { clickProject(this, "images/siegenut-full.png") });
-    //$("#tuscany").on("click", function () { clickProject(this, "images/tuscany-full.png") });
-    //$("#wardrobe").on("click", function () { clickProject(this, "images/wardrobe-full.png") });
 });
-
-//function for replacing the project image with the full example picture
-function clickProject(clicked, newImage) {
-    //white-background doesn't currently do anything
-    $($(".projectButtons").children("img")).removeClass("no-padding");
-    $(clicked).addClass("no-padding");
-    //fade out, replace source, fade in
-    $("#project-display").fadeOut("slow", function () {
-        $(this).attr("src", newImage);
-    })
-    .fadeIn(400);
-}
