@@ -258,7 +258,6 @@ no-padding {
 .contact-row .btn {
     background-image: none;
     padding-top: 20px;
-    margin-bottom: 3px;
 	font-size: 24px;
 	border-radius: 50%;
     color: white;
@@ -275,8 +274,7 @@ no-padding {
     box-shadow: none;
 }
 .contact-row .btn:active:focus {
-    margin-bottom: 0px;
-    margin-top: 3px;
+    background-color: rgba(255,255,255, 0.8);
 }
 .img-btn {
     padding: 0px;
