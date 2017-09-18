@@ -164,8 +164,9 @@ no-padding {
 .full-display {
     border: 8px solid rgb(180,180,180);
     border-radius: 16px;
-    max-width: 95%;
+    max-width: 100%;
     background-color: rgb(231,231,231);
+    float: none;
 }
 .full-display img {
     border-radius: 8px 8px 0px 0px;
@@ -181,7 +182,7 @@ no-padding {
     margin-bottom: 10px;
 }
 .project-button {
-    margin: 0px 5px;
+    margin: 5px;
     border-radius: 16px;
     padding: 30px;
     font-size: 30px;
