@@ -79,6 +79,9 @@ no-padding {
 	padding: 8px;
 	font-size: 25px;
 }
+.btn:focus, .btn:hover, .btn:active {
+    color: white;
+}
 .btn-section-nav,
 .btn-section-nav:focus {
 	border-radius: 50%;
@@ -192,9 +195,6 @@ no-padding {
     font-weight: bold;
     text-transform: uppercase;
     outline: 0;
-}
-.btn:focus, .btn:hover, .btn:active {
-    color: white;
 }
 .full-display .btn:hover {
     background-color: darkgray;
