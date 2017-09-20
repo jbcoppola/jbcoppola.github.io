@@ -131,9 +131,18 @@ no-padding {
 	margin-left: auto;
 	margin-right: auto;
 }
-.personal-row .text {
-	padding: 70px;
+.personal-row .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 0px;
+}
+.personal-row p:first-child {
+}
+.personal-row p:last-child {
+    width: 80%;
 	font-size: 15px;
+    margin-bottom: 75px;
 }
 
 /*PROJECTS DISPLAY ROW*/
@@ -214,6 +223,7 @@ no-padding {
     margin-bottom: 50px;
 }
 .skills-row h2 {
+    letter-spacing: 3px;
 	font-size: 20px;
 	color: darkslategray;
 }
@@ -222,10 +232,10 @@ no-padding {
 }
 .skills-row .skills {
 	display: flex;
+    word-wrap: break-word;
 	flex-direction: column;
 	justify-content: space-between;
 	border: 6px solid rgb(231,231,231);
-	padding: 15px;
 	height: 300px;
     margin-top: -6px;
     margin-bottom: -6px;
