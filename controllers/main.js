@@ -15,7 +15,7 @@ app.controller('main', function ($scope, $location, $anchorScroll, $filter) {
             "name": "siegenut",
             "thumb": "siegenut",
             "img": "siegenut-full",
-            "link": "disabled",
+            "link": "http://siegenut.gearhostpreview.com/",
             "github": "https://github.com/jbcoppola/SiegeNut",
             "description": "Made using Microsoft-MVC with C# and a persistent SQL database. A website for reviewing various pieces of siege equipment. Make a review for a piece of equipment or sort through reviews by field."
         },
