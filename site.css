@@ -150,22 +150,19 @@ no-padding {
 	padding-bottom: 95px;
 	position: relative;
 }
-.project-buttons {
+.project-buttons .white-overlay {
+    background-color: white;
+    display: inline-block;
+    margin: 5px auto;
 }
 .project-buttons img {
-    height: 80%;
-    width: 80%;
-    padding-bottom: 21px;
     cursor: pointer;
-    margin-bottom: 10px;
 }
 .project-buttons img:hover {
-    padding-bottom: 10px;
-    width: 85%;
-    height: 85%;
+    opacity: 0.8;
 }
 .project-buttons img:active {
-    padding: 10px 0px 0px 0px
+    opacity: 0.6;
 }
 .full-display {
     display: flex;
@@ -292,6 +289,7 @@ no-padding {
     height: 50px;
     margin-top: -10px;
 }
+
 @media (max-width: 700px) {
     .personal-row p:last-child {
         margin-bottom: 25%;

@@ -86,9 +86,11 @@
             <div class="row project-row" id="projects">
                 <p><h1>Projects</h1></p>
                 <div class="col-sm-3 project-buttons">
-                    <div class="row">
+                    <div class="row center-block">
                         <div class="col-sm-12 col-xs-6" ng-repeat="project in projects" ng-if="project.name != 'blank'">
-                            <img src="images/thumbs/{{project.thumb}}.png" class="img-responsive center-block" ng-click="setProject(project.name)" />
+                            <div class="white-overlay">
+                                <img src="images/thumbs/{{project.thumb}}.png" class="img-responsive center-block" ng-click="setProject(project.name)" />
+                            </div>
                         </div>
                     </div>
                 </div>
