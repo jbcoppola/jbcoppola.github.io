@@ -8,7 +8,7 @@
 
         //gets the href location and scrolls to it
         $("body, html").animate({
-            scrollTop: $($(this).attr('href')).offset().top - 50
+            scrollTop: $($(this).attr('href')).offset().top - 49
         },
             "slow");
     });

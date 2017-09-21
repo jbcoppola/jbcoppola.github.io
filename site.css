@@ -33,9 +33,6 @@ h1 {
 	margin-right: auto;
 	float: none;
 }
-no-padding {
-	padding: 0px;
-}
 /*center the navbar*/
 .navbar-center {
 	display: inline-block;
@@ -55,22 +52,24 @@ no-padding {
 /*HEADER ROW*/
 
 .header-row {
+    display: flex;
 	text-align: center;
 	background-color: rgb(20,20,20);
 	color: gainsboro;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
 }
 .header-row:before {
 	display: block;
 	position: absolute;
-	width: 100%;
-	height: 100%;
 	background-size: cover;
 	background-position: 50% 70%;
 	opacity: 0.1;
 }
 
 .header-row .spaced-text {
-	padding: 200px 0px;
+	vertical-align: middle;
 }
 .header-row .spaced-text h2 {
 	font-size: 30px;
@@ -82,6 +81,9 @@ no-padding {
 .btn:focus, .btn:hover, .btn:active {
     color: white;
     box-shadow: none;
+}
+.btn {
+    transition: 0.08s;
 }
 .btn-section-nav,
 .btn-section-nav:focus {
@@ -118,6 +120,8 @@ no-padding {
 .personal-row {
 	background-color: white;
 	position: relative;
+}
+.personal-row > div {
 }
 .personal-row .headshot {
 	background-color: rgb(231,231,231);
@@ -157,6 +161,7 @@ no-padding {
 }
 .project-buttons img {
     cursor: pointer;
+    transition: 0.1s;
 }
 .project-buttons img:hover {
     opacity: 0.8;
