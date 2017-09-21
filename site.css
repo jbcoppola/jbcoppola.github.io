@@ -131,18 +131,16 @@ no-padding {
 	margin-left: auto;
 	margin-right: auto;
 }
-.personal-row .col-md-8 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 75px 0px;
+.personal-row .col-md-8 p {
+    float: none;
 }
 .personal-row p:first-child {
+    margin-top: 10%;
 }
 .personal-row p:last-child {
     width: 80%;
 	font-size: 15px;
-    margin-bottom: 25px;
+    margin: 0px auto 15%;
 }
 
 /*PROJECTS DISPLAY ROW*/
@@ -293,4 +291,9 @@ no-padding {
     width: 50px;
     height: 50px;
     margin-top: -10px;
+}
+@media (max-width: 700px) {
+    .personal-row p:last-child {
+        margin-bottom: 25%;
+    }
 }
