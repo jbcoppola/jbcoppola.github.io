@@ -238,8 +238,8 @@ h1 {
     padding: 15px;
 	border: 6px solid rgb(231,231,231);
 	height: 300px;
-    margin-top: -6px;
-    margin-bottom: -6px;
+    margin-top: -7px;
+    margin-bottom: -7px;
 }
 .skills-row span {
 	font-size: 50px;
@@ -249,7 +249,7 @@ h1 {
 	color: gray;
 }
 .white-space {
-    border: 6px solid white;
+    border: 7px solid white;
     z-index: 1;
 }
 /* CONTACT ROW */
