@@ -88,7 +88,7 @@ h1 {
 .btn-section-nav,
 .btn-section-nav:focus {
 	border-radius: 50%;
-    padding: 11px 0px 0px 3px;
+    padding: 12px;
 	color: darkgray;
 	background-image: none;
 	background-color: transparent;
@@ -223,8 +223,8 @@ h1 {
     margin-bottom: 50px;
 }
 .skills-row h2 {
-    letter-spacing: 2px;
-	font-size: 20px;
+    letter-spacing: 1px;
+	font-size: 18px;
 	color: darkslategray;
 }
 .skills-row .main-column {
@@ -243,14 +243,23 @@ h1 {
 }
 .skills-row span {
 	font-size: 50px;
-	padding: 20px;
-	border-radius: 50%;
+	padding: 30px;
 	background-color: white;
 	color: gray;
 }
 .white-space {
     border: 7px solid white;
     z-index: 1;
+}
+.letter-c:before {
+    
+}
+.letter-c {
+    background-image: url('images/letter-c-64.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 22px;
+    border-radius: 0px;
 }
 /* CONTACT ROW */
 .btn-circle {

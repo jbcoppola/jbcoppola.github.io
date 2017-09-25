@@ -9,7 +9,7 @@ app.controller('main', function ($scope, $location, $anchorScroll, $filter) {
             "img": "Blank",
             "link": "disabled",
             "github":"disabled",
-            "description": "Click one of the project buttons on the left to display it with its description and a link to a live demo"
+            "description": "Click one of the project buttons on the left to display it with its description and a link to a live demo."
         },
         {
             "name": "siegenut",
@@ -17,7 +17,7 @@ app.controller('main', function ($scope, $location, $anchorScroll, $filter) {
             "img": "siegenut-full",
             "link": "http://siegenut.gearhostpreview.com/",
             "github": "https://github.com/jbcoppola/SiegeNut",
-            "description": "Made using Microsoft-MVC with C# and a persistent SQL database. A website for reviewing various pieces of siege equipment. Make a review for a piece of equipment or sort through reviews by field."
+            "description": "Website made using Microsoft-MVC with C# and a persistent SQL database. For reviewing various pieces of siege equipment. Make a review for a piece of equipment or sort through reviews by field."
         },
         {
             "name": "companylister",
@@ -41,7 +41,7 @@ app.controller('main', function ($scope, $location, $anchorScroll, $filter) {
             "skills": ["Front-end Development", "Back-end Development", "ASP.NET"]
         },
         {
-            "glyphicon": "glyphicon-copyright-mark",
+            "glyphicon": "letter-c",
             "skills": ["C#", "C++", "C"]
         },
         {
@@ -50,7 +50,7 @@ app.controller('main', function ($scope, $location, $anchorScroll, $filter) {
         },
         {
             "glyphicon": "glyphicon-console",
-            "skills": ["HTML / CSS / Bootstrap", "Javascript / Jquery", "Angular"]
+            "skills": ["HTML / CSS / Bootstrap", "JavaScript / jQuery", "AngularJS"]
         }
     ];
 });
