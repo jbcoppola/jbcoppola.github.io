@@ -9,7 +9,7 @@ app.controller('main', function ($scope, $location, $anchorScroll, $filter) {
             "img": "Blank",
             "link": "disabled",
             "github":"disabled",
-            "description": "Click one of the project buttons on the left to display it with its description and a link to a live demo."
+            "description": "Click one of the project buttons to display it with its description and a link to a live demo."
         },
         {
             "name": "siegenut",

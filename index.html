@@ -85,16 +85,16 @@
             <!--Project showcase section-->
             <div class="row project-row" id="projects">
                 <p><h1>Projects</h1></p>
-                <div class="col-sm-3 project-buttons">
-                    <div class="row center-block">
-                        <div class="col-sm-12 col-xs-6" ng-repeat="project in projects" ng-if="project.name != 'blank'">
-                            <div class="white-overlay">
-                                <img src="images/thumbs/{{project.thumb}}.png" class="img-responsive" ng-click="setProject(project.name)" />
+                <div class="col-md-3 project-buttons">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6 col-xs-6 center" ng-repeat="project in projects" ng-if="project.name != 'blank'">
+                            <div class="img-btn">
+                                <img src="images/thumbs/{{project.thumb}}.png" class="img-responsive" ng-click="setProject(project.name)"/>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-md-8">
                     <div class="full-display">
                         <img ng-src="images/{{currentProject.img}}.png" />
                         <div class="description text-center"><p>{{currentProject.description}}</p></div>

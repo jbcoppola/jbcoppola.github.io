@@ -154,20 +154,30 @@ h1 {
 	padding-bottom: 95px;
 	position: relative;
 }
-.project-buttons .white-overlay {
-    background-color: white;
+.project-buttons .col-xs-6 {
     display: inline-block;
-    margin: 5px auto;
+    margin: 0 auto 10px auto;
 }
-.project-buttons img {
+.project-buttons .img-btn {
     cursor: pointer;
     transition: 0.1s;
+    border-radius: inherit;
+    border-radius: 20px;
+    background-color: white;
+    border: 7px solid rgba(0,0,0,0.3);
+    float: none;
+    margin: auto;
+    max-width: 323px;
 }
-.project-buttons img:hover {
-    opacity: 0.8;
+.project-buttons .img-btn img {
+    border-radius: 13px;
+    transition: .1s;
 }
-.project-buttons img:active {
-    opacity: 0.6;
+.project-buttons .img-btn img:hover {
+    opacity: 0.7;
+}
+.project-buttons .img-btn img:active {
+    opacity: 1;
 }
 .full-display {
     display: flex;
@@ -295,10 +305,10 @@ h1 {
 .contact-row .btn:active:focus {
     background-color: rgba(255,255,255, 0.8);
 }
-.img-btn {
+.contact-row .img-btn {
     padding: 0px;
 }
-.img-btn img {
+.contact-row .img-btn img {
     width: 50px;
     height: 50px;
     margin-top: -10px;
