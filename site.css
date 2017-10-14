@@ -124,14 +124,14 @@ h1 {
 .personal-row > div {
 }
 .personal-row .headshot {
-	background-color: rgb(231,231,231);
+	background-color: rgba(0,0,0,0.1);
 	padding: 75px 0px;
 }
 .personal-row .headshot img {
 	display: block;
 	max-height: 300px;
 	max-width: 300px;
-	border: 6px solid rgb(210,210,210);
+	border: 6px solid rgba(0,0,0,0.1);
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -246,7 +246,7 @@ h1 {
 	flex-direction: column;
 	justify-content: space-between;
     padding: 15px;
-	border: 6px solid rgb(231,231,231);
+	border: 6px solid rgba(0,0,0,0.08);
 	height: 300px;
     margin-top: -7px;
     margin-bottom: -7px;
@@ -254,7 +254,7 @@ h1 {
 .skills-row span {
 	font-size: 50px;
 	padding: 30px;
-	background-color: white;
+	background-color: transparent;
 	color: gray;
 }
 .white-space {
