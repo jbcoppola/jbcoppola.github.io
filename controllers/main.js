@@ -17,7 +17,7 @@ app.controller('main', function ($scope, $location, $anchorScroll, $filter) {
             "img": "siegenut-full",
             "link": "http://siegenut.gearhostpreview.com/",
             "github": "https://github.com/jbcoppola/SiegeNut",
-            "description": "Website made using Microsoft-MVC with C# and a persistent SQL database. For reviewing various pieces of siege equipment. Make a review for a piece of equipment or sort through reviews by field."
+            "description": "Fictional store for buying and reviewing medieval siege equipment for assaulting castles. Microsoft-MVC ASP.NET website made with C# hooked up to a persistent SQL database. Features account authentication, full CRUD functionality for reviews and products, and search/sort capability."
         },
         {
             "name": "companylister",
