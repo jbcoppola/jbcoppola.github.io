@@ -53,12 +53,11 @@ h1 {
 
 .header-row {
     display: flex;
-	text-align: center;
-	background-color: rgb(20,20,20);
-	color: gainsboro;
-    height: 60vh;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
+	background-color: rgb(20,20,20);
+    height: 60vh;
 }
 .header-row:before {
 	display: block;
@@ -69,13 +68,14 @@ h1 {
 }
 
 .header-row .spaced-text {
-	vertical-align: middle;
+	text-align: center;
+	color: gainsboro;
 }
 .header-row .spaced-text h2 {
 	font-size: 30px;
 }
 .header-row .spaced-text h3 {
-	padding: 8px;
+	margin: 8px;
 	font-size: 25px;
 }
 .btn:focus, .btn:hover, .btn:active {
