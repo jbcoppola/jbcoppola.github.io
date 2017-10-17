@@ -23,8 +23,8 @@ app.controller('main', function ($scope, $location, $anchorScroll, $filter) {
             "name": "companylister",
             "thumb": "companyLister",
             "img": "companylister-full",
-            "link": "https://jbcoppola.github.io/InsitenCode/",
-            "github": "https://github.com/jbcoppola/InsitenCode",
+            "link": "https://jbcoppola.github.io/CompanyLister/",
+            "github": "https://github.com/jbcoppola/CompanyLister",
             "description": "Angular website with UI-bootstrap and non-persistent data. Enter companies into a list and view entries in either card or list UI view. Complete CRUD functionality. Display how many items are on one page at a time using pagination."
         }
     ];
