@@ -37,20 +37,23 @@ app.controller('main', function ($scope, $location, $anchorScroll, $filter) {
     //for the skills section
     $scope.skillList = [
         {
-            "glyphicon": "glyphicon-sort",
-            "skills": ["Front-end Development", "Back-end Development", "ASP.NET"]
+            "icon": "images/development_cc.svg",
+            "skills": ["Front-end Development", "Back-end Development", "ASP.NET"],
+            "credit": "Created by Gregor Cresnar from the Noun Project"
         },
         {
-            "glyphicon": "letter-c",
+            "icon": "images/letter C.svg",
             "skills": ["C#", "C++", "C"]
         },
         {
-            "glyphicon": "glyphicon-duplicate",
-            "skills": ["Graphic Design", "Adobe Illustrator", "Adobe Photoshop"]
+            "icon": "images/graphic_design_cc.svg",
+            "skills": ["Graphic Design", "Adobe Illustrator", "Adobe Photoshop"],
+            "credit": "Created by Icondesk from the Noun Project"
         },
         {
-            "glyphicon": "glyphicon-console",
-            "skills": ["HTML / CSS / Bootstrap", "JavaScript / jQuery", "AngularJS"]
+            "icon": "images/javascript_cc.svg",
+            "skills": ["HTML / CSS / Bootstrap", "JavaScript / jQuery", "AngularJS"],
+            "credit": "Created by Ismael Ruiz from the Noun Project"
         }
     ];
 });

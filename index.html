@@ -46,23 +46,22 @@
             </div><!-- /.container-fluid -->
         </nav>
         <!--end of navbar-->
-        <div class="container-fluid main">
+        <div class="main">
             <!--Top header - the banner-->
             <div class="header-row" id="header">
-                    <div class="spaced-text">
-                        <p><h2>Joseph Coppola</h2></p>
-                        <p><h3>Software Developer</h3></p>
-                    </div>
+                <div class="spaced-text">
+                    <p><h2>Joseph Coppola</h2></p>
+                    <p><h3>Software Developer</h3></p>
+                </div>
                 <a class="btn-section-nav dark" href="#personal" role="button"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
             <!--end of top header-->
             <!--Biography section-->
             <div class="personal-row" id="personal">
                 <div class="bio-side">
-                     <img src="images/JosephCoppolaHeadshot_cr.jpg" />
+                    <img src="images/JosephCoppolaHeadshot_cr.jpg" />
                 </div>
                 <div class="bio">
-                    <div></div>
                     <h1>About Me</h1>
                     <p>
                         I'm an ASU graduate with a Bachelor's in Fine Arts. After discovering an interest in programming
@@ -78,71 +77,66 @@
             </div>
             <!--end of biography section-->
             <!--Project showcase section-->
-            <div class="row project-row" id="projects">
+            <div class="project-row" id="projects">
                 <p><h1>Projects</h1></p>
-                <div class="col-md-3 project-buttons">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-6 col-xs-6 center" ng-repeat="project in projects" ng-if="project.name != 'blank'">
+                <div>
+                    <div class="project-buttons">
+                        <div ng-repeat="project in projects" ng-if="project.name != 'blank'">
                             <div class="img-btn" ng-click="setProject(project.name)">
-                                <img src="images/thumbs/{{project.thumb}}.png" class="img-responsive"/>
+                                <img src="images/thumbs/{{project.thumb}}.png" />
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-8">
                     <div class="full-display">
                         <img ng-src="images/{{currentProject.img}}.png" />
                         <div class="description text-center"><p>{{currentProject.description}}</p></div>
-                        <div class="project-button-links text-center">
-                            <a class="btn project-button" role="button" ng-href="{{currentProject.github}}" target="{{currentProject.github}}" ng-show="currentProject.github != 'disabled'">Github</a>
-                            <a class="btn project-button" role="button" ng-href="{{currentProject.link}}" target="{{currentProject.link}}" ng-show="currentProject.link != 'disabled'">Live Demo</a>
+                        <div class="project-links" ng-show="currentProject.name != 'blank'">
+                            <a class="link-button" role="button" ng-href="{{currentProject.github}}" target="{{currentProject.github}}" ng-show="currentProject.github != 'disabled'">Github</a>
+                            <a class="link-button" role="button" ng-href="{{currentProject.link}}" target="{{currentProject.link}}" ng-show="currentProject.link != 'disabled'">Live Demo</a>
                         </div>
                     </div>
                 </div>
                 <a class="btn-section-nav dark" href="#skills" role="button"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
             <!--Skills section-->
-            <div class="row skills-row" id="skills">
+            <div class="skills-row" id="skills">
                 <p><h1>Skills</h1></p>
-                <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <div class="col-md-3" ng-repeat="skill in skillList">
-                        <div class="row text-center">
-                            <div class="col-xs-10 col-xs-offset-1 icon">
-                                <span class="glyphicon {{skill.glyphicon}} hidden-sm hidden-xs"></span>
+                <div>
+                    <div ng-repeat="skill in skillList">
+                            <div class="icon"><img src={{skill.icon}} /></div>
+                            <div class="hidden">
+                                {{skill.credit}}
                             </div>
-                            <div class="col-xs-6 col-xs-offset-3 white-space"></div>
-                            <div class="col-xs-10 col-xs-offset-1 skills">
+                            <div class="white-space"></div>
+                            <div class="skills">
                                 <p><h2>{{skill.skills[0]}}</h2></p>
                                 <p><h2>{{skill.skills[1]}}</h2></p>
                                 <p><h2>{{skill.skills[2]}}</h2></p>
                             </div>
-                            <div class="col-xs-6 col-xs-offset-3 white-space"></div>
-                        </div>
+                            <div class="white-space"></div>
                     </div>
                 </div>
                 <a class="btn-section-nav light" href="#contacts" role="button"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
             <!--end of skills section-->
             <!--contact section-->
-            <div class="row contact-row" id="contacts">
+            <div class="contact-row" id="contacts">
                 <p><h1>Contact</h1></p>
-                <div class="col-xs-4 col-sm-2 col-sm-offset-3">
-                    <a class="btn btn-default btn-circle img-btn" href="https://www.linkedin.com/in/joseph-coppola/" target="_blank" role="button">
-                        <img src="images/linkedin.png" />
+                <div>
+                    <a class="img-btn" href="https://www.linkedin.com/in/joseph-coppola/" target="_blank" role="button">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
                     </a>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <a class="btn btn-default btn-circle img-btn" href="https://github.com/jbcoppola" role="button" target="_blank">
-                        <img src="images/github.png" />
+                    <a class="img-btn" href="https://github.com/jbcoppola" role="button" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
                     </a>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <a class="btn btn-default btn-circle glyphicon glyphicon-envelope" href="mailto:jbcoppola@gmail.com" target="_blank" role="button"></a>
+                    <a class="img-btn" href="mailto:jbcoppola@gmail.com" target="_blank" role="button">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
                 </div>
                 <a class="btn-section-nav dark" href="#header" role="button"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
             </div>
-            
+
         </div><!--end of contact section-->
-    </div> <!--main container-fluid div-->
+    </div> <!--main div-->
 </body>
 </html>
