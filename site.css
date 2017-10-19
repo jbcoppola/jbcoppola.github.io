@@ -120,32 +120,35 @@ h1 {
 /*PERSONAL INFORMATION ROW*/
 .personal-row {
 	background-color: white;
-	position: relative;
+	display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 .personal-row > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
-.personal-row .headshot {
+.personal-row .bio-side {
 	background-color: rgba(0,0,0,0.1);
-	padding: 75px 0px;
+    flex: 0 1 30%;
 }
-.personal-row .headshot img {
-	display: block;
-	max-height: 300px;
-	max-width: 300px;
-	border: 6px solid rgba(0,0,0,0.1);
-	margin-left: auto;
-	margin-right: auto;
+.personal-row img {
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 6px solid rgba(0,0,0,0.1);
+    align-self: center;
 }
-.personal-row .col-md-8 p {
-    float: none;
+.personal-row .bio {
+    height: 45vh;
+    flex: 0 1 70%;
 }
-.personal-row p:first-child {
-    margin-top: 10%;
-}
-.personal-row p:last-child {
-    width: 80%;
-	font-size: 15px;
-    margin: 0px auto 15%;
+.personal-row .bio p {
+    max-width: 70%;
+    align-self: center;
+    margin-bottom: 50px;
 }
 
 /*PROJECTS DISPLAY ROW*/
