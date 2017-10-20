@@ -7,30 +7,20 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 46 50.900002"
+   version="1.1"
    x="0px"
    y="0px"
-   version="1.1"
+   viewBox="0 0 57.799999 38.733601"
+   xml:space="preserve"
    id="svg14"
    sodipodi:docname="javascript_cc.svg"
-   width="46"
-   height="50.900002"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
-  <metadata
-     id="metadata20">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>js-file</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs18" />
-  <sodipodi:namedview
+   width="57.799999"
+   height="38.733601"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"><metadata
+     id="metadata20"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs18" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
@@ -39,29 +29,26 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1226"
-     inkscape:window-height="951"
+     inkscape:window-width="686"
+     inkscape:window-height="480"
      id="namedview16"
      showgrid="false"
-     inkscape:zoom="7.4039216"
-     inkscape:cx="30.241628"
-     inkscape:cy="9.8208359"
+     inkscape:zoom="2.8606061"
+     inkscape:cx="28.9"
+     inkscape:cy="11.16463"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg14" />
-  <title
-     id="title2">js-file</title>
-  <path
-     d="M 38,47.9 H 9 v -6 H 6 v 6 a 3,3 0 0 0 3,3 h 30.3 a 1.6,1.6 0 0 0 1.6,-1.6 v -7.4 h -3 v 6 z M 40.6,8.3 31.2,0 H 8.4 A 2.4,2.4 0 0 0 6,2.4 v 23.5 h 3 v -23 h 19 v 7 a 3,3 0 0 0 3,3 h 7 v 13 h 3 V 9.7 A 2.1,2.1 0 0 0 40.6,8.3 Z M 46,26.9 a 3,3 0 0 0 -3,-3 H 3 a 3,3 0 0 0 -3,3 v 14 a 3,3 0 0 0 3,3 h 40 a 3,3 0 0 0 3,-3 z m -2,14 a 1,1 0 0 1 -1,1 H 3 a 1,1 0 0 1 -1,-1 v -14 a 1,1 0 0 1 1,-1 h 40 a 1,1 0 0 1 1,1 z"
-     id="path4"
-     inkscape:connector-curvature="0" />
-  <path
-     d="m 19.1,28.9 h 2.3 v 6.4 c 0,2.9 -1.4,3.9 -3.6,3.9 l -1.7,-0.2 0.3,-1.8 1.2,0.2 c 1,0 1.6,-0.4 1.6,-2 v -6.5 z"
-     id="path6"
-     inkscape:connector-curvature="0" />
-  <path
-     d="m 23.4,36.6 a 5.8,5.8 0 0 0 2.5,0.6 c 1,0 1.6,-0.4 1.6,-1.1 0,-0.7 -0.5,-1 -1.7,-1.4 -1.2,-0.4 -2.8,-1.5 -2.8,-3 0,-1.5 1.4,-3 3.8,-3 a 6.2,6.2 0 0 1 2.6,0.5 L 28.9,31 a 4.8,4.8 0 0 0 -2.1,-0.5 c -1,0 -1.5,0.5 -1.5,1 0,0.5 0.6,0.9 1.9,1.4 1.3,0.5 2.6,1.6 2.6,3 0,1.4 -1.3,3.1 -4.1,3.1 a 6.6,6.6 0 0 1 -2.9,-0.6 z"
-     id="path8"
-     inkscape:connector-curvature="0" />
-</svg>
+     inkscape:current-layer="svg14" /><g
+     id="g8"
+     transform="translate(-4.1,-13.68103)"><polygon
+       points="18.8,49.8 22.6,46.5 10.8,33 22.6,19.5 18.8,16.2 4.1,33 "
+       id="polygon2" /><rect
+       x="13.7"
+       y="30.5"
+       transform="matrix(0.1961,-0.9806,0.9806,0.1961,-5.831,58.8873)"
+       width="38.5"
+       height="5"
+       id="rect4" /><polygon
+       points="43.4,46.5 47.2,49.8 61.9,33 47.2,16.2 43.4,19.5 55.2,33 "
+       id="polygon6" /></g></svg>

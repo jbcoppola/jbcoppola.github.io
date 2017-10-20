@@ -48,12 +48,12 @@ app.controller('main', function ($scope, $location, $anchorScroll, $filter) {
         {
             "icon": "images/graphic_design_cc.svg",
             "skills": ["Graphic Design", "Adobe Illustrator", "Adobe Photoshop"],
-            "credit": "Created by Icondesk from the Noun Project"
+            "credit": "Created by Mello from the Noun Project"
         },
         {
             "icon": "images/javascript_cc.svg",
             "skills": ["HTML / CSS / Bootstrap", "JavaScript / jQuery", "AngularJS"],
-            "credit": "Created by Ismael Ruiz from the Noun Project"
+            "credit": "Created by Anath from the Noun Project"
         }
     ];
 });
