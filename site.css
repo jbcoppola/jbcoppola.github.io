@@ -38,6 +38,7 @@ body,p,h1,h2,h3,h4,h5,h6 {
     justify-content: space-around;
     flex: 1 1 auto;
     align-items: center;
+    text-align: center;
 }
 .navbar-items a {
     text-decoration: none;
@@ -465,5 +466,8 @@ h1 {
     }
     .navbar-items {
         flex-direction: column;
+    }
+    .navbar-items a {
+        width: 100vw;
     }
 }
