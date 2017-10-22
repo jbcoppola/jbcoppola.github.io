@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
    
     //when the nav button is clicked, it scrolls to that section
-    $(".btn-section-nav, ul a").click(function (event) {
+    $(".btn-section-nav, .navbar-items a").click(function (event) {
 
         //stops the href jump from occuring when javascript runs
         event.preventDefault();
