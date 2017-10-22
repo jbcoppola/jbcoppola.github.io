@@ -157,12 +157,12 @@ h1 {
     margin-bottom: 10px;
     transition: 0.08s;
 }
-.btn-section-nav.light:hover, .btn-section-nav:focus {
+.btn-section-nav.light:hover, .btn-section-nav.light:focus {
     border-color: gray;
     color: gray;
     outline: none;
 }
-.btn-section-nav.dark:hover {
+.btn-section-nav.dark:hover, .btn-section-nav.dark:focus {
     border-color: white;
     color: white;
 }
@@ -170,10 +170,13 @@ h1 {
     background-color: rgba(0,0,0,0.1);
 }
 .btn-section-nav.dark:hover:active {
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.2);
 }
 .btn-section-nav i.fa-angle-down {
-    margin-top: 10px;
+    margin-top: 11px;
+}
+.btn-section-nav i.fa-angle-up {
+    margin-top: 8px;
 }
 
 /*PERSONAL INFORMATION ROW*/
