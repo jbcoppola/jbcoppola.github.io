@@ -1,12 +1,19 @@
 ﻿window.onload = function () {
-    
-    var x = document.querySelectorAll(".navbar-items a");
-    for (i = 0; i < x.length; i++) {
-        var text = x[i].text.toLowerCase();
-        scrollTo(x[i], text)
-    }
-    
 
+    //sets up scrolling when navbar links are clicked
+    var navbarLinks = document.querySelectorAll(".navbar-items a");
+    for (i = 0; i < navbarLinks.length; i++) {
+        var text = navbarLinks[i].text.toLowerCase();
+        scrollTo(navbarLinks[i], text)
+    }
+    //set scrlling for each section nav button
+    var sectionBtns = document.querySelectorAll(".btn-section-nav");
+    scrollTo(sectionBtns[0], "about");
+    scrollTo(sectionBtns[1], "projects");
+    scrollTo(sectionBtns[2], "skills");
+    scrollTo(sectionBtns[3], "contact");
+    scrollTo(sectionBtns[4], "top");
+    
     navbarHide();
 
     document.querySelector("#siegenut").addEventListener("click", function () {
@@ -23,7 +30,7 @@
         document.querySelector(".navbar-items").classList.toggle("hidden");
     });
 };
-
+//hides or shows navbar links in mobile view
 function navbarHide() {
     if (window.innerWidth <= 560) {
         document.querySelector(".navbar-items").classList.add("hidden");
@@ -32,6 +39,7 @@ function navbarHide() {
         document.querySelector(".navbar-items").classList.remove("hidden");
     }
 }
+// to choose and set project
 function setProject(project) {
     var p;
     if (project == "siegenut") {
@@ -55,6 +63,7 @@ function setProject(project) {
     document.querySelector(".demo").classList.remove("hidden");
 };
 
+//changes full-display to selected project
 function changeProject(imgSrc, description, github, demo) {
     document.querySelector(".full-display img").src = imgSrc;
     document.querySelector(".full-display p").innerText = description;
@@ -66,7 +75,6 @@ function scrollTo(btn, scrollToId) {
     btn.addEventListener("click", function (event) {
         event.preventDefault();
         var destination = document.getElementById(scrollToId).offsetTop - 55;
-        console.log(destination);
         window.scroll({ top: destination, behavior: "smooth" });
     })
 }
