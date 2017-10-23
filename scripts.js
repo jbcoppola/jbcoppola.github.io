@@ -1,36 +1,37 @@
-﻿$(document).ready(function () {
-   
-    //when the nav button is clicked, it scrolls to that section
-    $(".btn-section-nav, .navbar-items a").click(function (event) {
+﻿window.onload = function () {
+    
+    var x = document.querySelectorAll(".navbar-items a");
+    for (i = 0; i < x.length; i++) {
+        var text = x[i].text.toLowerCase();
+        scrollTo(x[i], text)
+    }
+    
 
-        //stops the href jump from occuring when javascript runs
-        event.preventDefault();
-
-        //gets the href location and scrolls to it
-        $("body, html").animate({
-            scrollTop: $($(this).attr('href')).offset().top - 55
-        },
-            "slow");
-    });
     navbarHide();
-    $(window).resize(function () {
+
+    document.querySelector("#siegenut").addEventListener("click", function () {
+        setProject("siegenut");
+    });
+    document.querySelector("#companyLister").addEventListener("click", function () {
+        setProject("companyLister");
+    });
+    window.addEventListener("resize", function () {
         navbarHide();
     });
 
-    $(".hamburger").click(function () {
-        $(".navbar-items").toggleClass("hidden");
-    })
-});
+    document.querySelector(".hamburger").addEventListener("click", function () {
+        document.querySelector(".navbar-items").classList.toggle("hidden");
+    });
+};
 
 function navbarHide() {
-    if ($(window).width() < 544) {
-        $(".navbar-items").addClass("hidden");
+    if (window.innerWidth <= 560) {
+        document.querySelector(".navbar-items").classList.add("hidden");
     }
     else {
-        $(".navbar-items").removeClass("hidden");
+        document.querySelector(".navbar-items").classList.remove("hidden");
     }
 }
-
 function setProject(project) {
     var p;
     if (project == "siegenut") {
@@ -59,4 +60,13 @@ function changeProject(imgSrc, description, github, demo) {
     document.querySelector(".full-display p").innerText = description;
     document.querySelector(".full-display .github").href = github;
     document.querySelector(".full-display .demo").href = demo;
+}
+
+function scrollTo(btn, scrollToId) {
+    btn.addEventListener("click", function (event) {
+        event.preventDefault();
+        var destination = document.getElementById(scrollToId).offsetTop - 55;
+        console.log(destination);
+        window.scroll({ top: destination, behavior: "smooth" });
+    })
 }
