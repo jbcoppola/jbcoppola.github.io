@@ -338,7 +338,7 @@ h1 {
 .skills-row h1 {
     margin-bottom: 50px;
 }
-.skills-row h2 {
+.skills-row p {
     letter-spacing: 1px;
 	font-size: 18px;
 	color: darkslategray;
@@ -347,7 +347,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
     word-wrap: break-word;
-	justify-content: space-between;
+	justify-content: space-around;
     text-align: center;
     padding: 15px;
 	border: 6px solid rgba(0,0,0,0.08);
