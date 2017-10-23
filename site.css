@@ -212,7 +212,6 @@ p {
     align-self: center;
 }
 .about-row .bio {
-    min-height: 450px;
     flex: 0 1 70%;
     justify-content: center;
 }
@@ -504,6 +503,12 @@ p {
     }
 }
 @media screen and (max-width: 560px) {
+    .about-row .headshot {
+        padding: 10px 0;
+    }
+    .about-row .bio {
+        padding: 40px 0;
+    }
     .about-row img {
         max-height: 250px;
         max-width: 250px;
