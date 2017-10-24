@@ -377,9 +377,9 @@ p {
 	height: 100%;
 }
 .white-space {
-   margin-top: -.5vh;
-   margin-bottom: -.5vh;
-   border: 7px solid white;
+   margin-top: -1.5vh;
+   margin-bottom: -1.5vh;
+   border: 1vh solid white;
    width: 50%;
    z-index: 1;
 }
