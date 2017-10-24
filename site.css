@@ -236,6 +236,9 @@ p {
     background-color: #8cbfce;
     color: black;
 }
+.about-row .bio a:active {
+    background-color: #6aa3b5;
+}
 
 /*PROJECTS DISPLAY ROW*/
 
@@ -388,7 +391,7 @@ p {
 .white-space {
    margin-top: -1vh;
    margin-bottom: -1vh;
-   border: 1vh solid white;
+   border: 2vh solid white;
    width: 50%;
    z-index: 1;
 }
