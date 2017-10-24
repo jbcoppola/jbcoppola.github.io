@@ -225,8 +225,16 @@ p {
     line-height: 1.5;
     margin-bottom: 40px;
 }
-.about-row .bio button {
-    
+.about-row .bio a {
+    background-color: lightblue;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: rgb(40,40,40);
+    font-weight: bold;
+}
+.about-row .bio a:hover {
+    background-color: #8cbfce;
+    color: black;
 }
 
 /*PROJECTS DISPLAY ROW*/
