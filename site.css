@@ -94,9 +94,10 @@ a {
 }
 h1 {
 	text-align: center;
-	letter-spacing: 5px;
-	font-size: 36px;
-	margin: 30px 0px;
+	letter-spacing: 7px;
+	font-size: 55px;
+	margin: 60px 0px;
+    font-weight: 300;
 	text-transform: uppercase;
 	color: rgb(160,160,160);
 }
@@ -396,6 +397,9 @@ p {
     flex-direction: column;
     justify-content: space-between;
     min-height: 50vh;
+}
+.contact-row h1 {
+    margin-bottom: 0;
 }
 .contact-row  > div {
     display: flex;
