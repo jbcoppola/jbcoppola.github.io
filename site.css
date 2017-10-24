@@ -391,7 +391,7 @@ p {
 .white-space {
    margin-top: -1vh;
    margin-bottom: -1vh;
-   border: 2vh solid white;
+   border: 1.2vh solid white;
    width: 50%;
    z-index: 1;
 }
