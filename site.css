@@ -141,8 +141,8 @@ p {
 	text-align: center;
 	color: gainsboro;
 }
-.header-row .spaced-text h2 {
-	font-size: 46px;
+.header-row .spaced-text h1 {
+    margin: 0;
 }
 .header-row .spaced-text h3 {
 	margin: 8px;
