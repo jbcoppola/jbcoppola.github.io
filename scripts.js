@@ -22,6 +22,9 @@
     document.querySelector("#companyLister").addEventListener("click", function () {
         setProject("companyLister");
     });
+    document.querySelector("#wikiViewer").addEventListener("click", function () {
+        setProject("wikiViewer");
+    });
     window.addEventListener("resize", function () {
         navbarHide();
     });
@@ -56,6 +59,14 @@ function setProject(project) {
             "demo": "https://jbcoppola.github.io/CompanyLister/",
             "github": "https://github.com/jbcoppola/CompanyLister",
             "description": "Angular website with UI-bootstrap and non-persistent data. Enter companies into a list and view entries in either card or list UI view. Complete CRUD functionality. Display how many items are on one page at a time using pagination."
+        };
+    }
+    else if (project == "wikiViewer") {
+        p = {
+            "imgSrc": "images/wikiViewer-full.png",
+            "demo": "https://jbcoppola.github.io/Wikipedia-Viewer/",
+            "github": "https://github.com/jbcoppola/Wikipedia-Viewer",
+            "description": "Javascript page that queries Wikipedia's API to return a list of article search results. Search for a specific phrase or click on the button for a random article. Uses fetch function to send query (will not work in Internet Explorer) and CSS animations with SASS-generated stylesheet."
         };
     }
     changeProject(p.imgSrc, p.description, p.github, p.demo);
