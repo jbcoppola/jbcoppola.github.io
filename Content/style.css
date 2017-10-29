@@ -23,7 +23,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
   min-height: 100vh; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none; }
 
 .hidden {
   display: none !important; }
@@ -185,17 +186,17 @@ p {
   margin-bottom: 65px;
   -webkit-transition: 0.08s;
   transition: 0.08s; }
-  .btn-section-nav .light:hover, .btn-section-nav .light:focus {
+  .btn-section-nav.light:hover, .btn-section-nav.light:focus {
     border-color: #808080;
     color: #808080;
     outline: none; }
-  .btn-section-nav .dark:hover, .btn-section-nav .dark:focus {
+  .btn-section-nav.light:hover:active {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .btn-section-nav.dark:hover, .btn-section-nav.dark:focus {
     border-color: white;
     color: white;
     outline: none; }
-  .btn-section-nav .light:hover:active {
-    background-color: rgba(0, 0, 0, 0.1); }
-  .btn-section-nav .dark:hover:active {
+  .btn-section-nav.dark:hover:active {
     background-color: rgba(255, 255, 255, 0.2); }
   .btn-section-nav i.fa-angle-down {
     margin-top: 13px; }

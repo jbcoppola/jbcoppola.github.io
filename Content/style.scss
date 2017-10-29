@@ -30,6 +30,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
+    outline: none;
 }
 
 .hidden {
@@ -126,6 +127,7 @@ h1 {
     text-transform: uppercase;
     color: $dark1Main;
 }
+
 h3 {
     font-size: 40px;
 }
@@ -201,24 +203,28 @@ p {
     margin-bottom: 65px;
     transition: 0.08s;
 
-    .light:hover, .light:focus {
-        border-color: $dark2Main;
-        color: $dark2Main;
-        outline: none;
+    &.light {
+        &:hover, &:focus {
+            border-color: $dark2Main;
+            color: $dark2Main;
+            outline: none;
+        }
+
+        &:hover:active {
+            background-color: rgba(0,0,0,0.1);
+        }
     }
 
-    .dark:hover, .dark:focus {
-        border-color: white;
-        color: white;
-        outline: none;
-    }
+    &.dark {
+        &:hover, &:focus {
+            border-color: white;
+            color: white;
+            outline: none;
+        }
 
-    .light:hover:active {
-        background-color: rgba(0,0,0,0.1);
-    }
-
-    .dark:hover:active {
-        background-color: rgba(255,255,255,0.2);
+        &:hover:active {
+            background-color: rgba(255,255,255,0.2);
+        }
     }
 
     i.fa-angle-down {
@@ -538,6 +544,7 @@ p {
     h3 {
         font-size: 34px;
     }
+
     .main > div {
         padding-bottom: 85px;
     }
