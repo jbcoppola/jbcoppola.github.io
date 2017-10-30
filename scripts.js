@@ -66,7 +66,7 @@ function setProject(project) {
             "imgSrc": "images/wikiViewer-full.png",
             "demo": "https://jbcoppola.github.io/Wikipedia-Viewer/",
             "github": "https://github.com/jbcoppola/Wikipedia-Viewer",
-            "description": "Javascript page that queries Wikipedia's API to return a list of article search results. Search for a specific phrase or click on the button for a random article. Uses fetch function to send query (will not work in Internet Explorer) and CSS animations with SASS-generated stylesheet."
+            "description": "Web page that uses the native Fetch API to query Wikipedia's API to return a list of article search results. User can retrieve either a random article or the first 18 articles that match the search term."
         };
     }
     changeProject(p.imgSrc, p.description, p.github, p.demo);
