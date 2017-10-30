@@ -66,7 +66,7 @@ function setProject(project) {
             "imgSrc": "images/wikiViewer-full.png",
             "demo": "https://jbcoppola.github.io/Wikipedia-Viewer/",
             "github": "https://github.com/jbcoppola/Wikipedia-Viewer",
-            "description": "Web page that uses the native Fetch API to query Wikipedia's API to return a list of article search results. User can retrieve either a random article or the first 18 articles that match the search term."
+            "description": "Web page that uses the native Fetch API to query Wikipedia's API and return a list of article search results. User can retrieve either a random article or the first 18 articles that match the search term."
         };
     }
     changeProject(p.imgSrc, p.description, p.github, p.demo);
