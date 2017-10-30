@@ -471,12 +471,9 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   min-height: 60vh; }
-  .main .contact-row h1 {
-    margin-bottom: 0; }
   .main .contact-row > div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -574,9 +571,12 @@ p {
       display: none; }
     .project-row .full-display .description {
       padding: 30px 30px; }
-  .contact-row > div {
-    width: 100%; }
-  .contact-row .img-btn {
+  .main .contact-row > div {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .main .contact-row .img-btn {
+    margin: 5px;
     height: 75px;
     width: 75px;
     font-size: 40px; } }

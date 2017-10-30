@@ -487,11 +487,10 @@ p {
     background-color: rgb(40,40,40);
     text-align: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     min-height: 60vh;
 
     h1 {
-        margin-bottom: 0;
     }
 
     > div {
@@ -622,12 +621,14 @@ p {
         }
     }
 
-    .contact-row {
+    .main .contact-row {
         > div {
             width: 100%;
+            flex-wrap: wrap;
         }
 
         .img-btn {
+            margin: 5px;
             height: 75px;
             width: 75px;
             font-size: 40px;
