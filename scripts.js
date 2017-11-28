@@ -25,6 +25,9 @@
     document.querySelector("#wikiViewer").addEventListener("click", function () {
         setProject("wikiViewer");
     });
+    document.querySelector("#text-adventure").addEventListener("click", function () {
+        setProject("text-adventure");
+    });
     window.addEventListener("resize", function () {
         navbarHide();
     });
@@ -67,6 +70,14 @@ function setProject(project) {
             "demo": "https://jbcoppola.github.io/Wikipedia-Viewer/",
             "github": "https://github.com/jbcoppola/Wikipedia-Viewer",
             "description": "Web page that uses the native Fetch API to query Wikipedia's API and return a list of article search results. User can retrieve either a random article or the first 18 articles that match the search term."
+        };
+    }
+    else if (project == "text-adventure") {
+        p = {
+            "imgSrc": "images/textadventure-full.png",
+            "demo": "https://jbcoppola.github.io/Text-Adventure/",
+            "github": "https://github.com/jbcoppola/Text-Adventure",
+            "description": "A text adventure game that takes in user commands and outputs text of the results. Currently in progress."
         };
     }
     changeProject(p.imgSrc, p.description, p.github, p.demo);
